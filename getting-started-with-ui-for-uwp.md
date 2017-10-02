@@ -2,7 +2,7 @@
 
 Have you heard of [Telerik UI for UWP](http://www.telerik.com/universal-windows-platform-ui)? It's a suite of UI controls for [Universal Windows Platform](https://en.wikipedia.org/wiki/Universal_Windows_Platform) (UWP). You can find the [source code](https://github.com/telerik/UI-For-UWP) (Apache License v2.0) and the [documentation](https://github.com/telerik/uwp-docs) on GitHub. What's more, we're now accepting pull requests and issues for bugs/feedback!
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/ui-for-uwp-controls-in-action.png)
+![](https://i.imgur.com/kkDpH5S.png)
 
 The suite contains controls that address common UI requirements in line-of-business (LOB) applications. These include data management ([DataForm](http://www.telerik.com/universal-windows-platform-ui/dataform)), scheduling ([Calendar](http://www.telerik.com/universal-windows-platform-ui/calendar)), navigation ([RadialMenu](http://www.telerik.com/universal-windows-platform-ui/radialmenu)), data visualization ([Chart](http://www.telerik.com/universal-windows-platform-ui/chart)), and more. Actually, the list itself is rather long. Have a look:
 
@@ -35,7 +35,7 @@ In this article, I'll walk you through the source code and show you how to build
 
 ## Understanding the Repository Structure
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/ui-for-uwp-repository.png)
+![](https://i.imgur.com/BiNtExL.png)
 
 The [source code for Telerik UI for UWP](https://github.com/telerik/UI-For-UWP) is published on GitHub and is structured as follows:
 
@@ -57,7 +57,7 @@ The easiest way to build the source of **Telerik UI for UWP** is to open the fil
 
 You may encounter an error when attempting to build the source with Visual Studio:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/build-error-nuget-ui-for-uwp.png)
+![](https://i.imgur.com/W37Hg9G.png)
 
 The following workaround will resolve this behaviour:
 
@@ -71,11 +71,11 @@ Credit to **Hrvoje Matić** for discovering this workaround, which was [posted t
 
 **Telerik UI for UWP** is available as a package on [NuGet](https://www.nuget.org/) and can be incorporated into a new or existing product through Visual Studio:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/telerik-ui-for-uwp-on-nuget.png)
+![](https://i.imgur.com/dUpCyOD.png)
 
 You can add this package to a project through the **Package Manager Console** or the **Solution Explorer**:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/ui-for-uwp-in-visual-studio.png)
+![](https://i.imgur.com/NCci3Uz.png)
 
 Once added, controls can be added and qualified in XAML pages through prefixes and namespaces. Here's an example using the **RadialGauge** control:
 
@@ -113,13 +113,13 @@ Once added, these controls will be able in the **Toolbox** window of Visual Stud
 
 Now, the fun begins: building an application that uses the **Chart** and **Grid** controls. These controls are well understood by developers so this is a good place to start.
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/chart-in-ui-for-uwp.png)
+![](https://i.imgur.com/evHdXHK.png)
 
 The **Chart** control is versatile charting component that you can use to visualize data in many different ways. Here, I'm going to build an application that uses it to represent a set of arbitrary data.
 
 I'll start by creating a new UWP application in Visual Studio and add the **Telerik UI for UWP** NuGet package to the solution:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/getting-started-uwp-1.png)
+![](https://i.imgur.com/WweCgtG.png)
 
 From here, I'll open up MainPage.xaml and add a **RadCartesianChart** element to the page:
 
@@ -141,7 +141,7 @@ From here, I'll open up MainPage.xaml and add a **RadCartesianChart** element to
 
 Running this application will display the chart with the following messages:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/getting-started-uwp-2.png)
+![](https://i.imgur.com/Y0KrO56.png)
 
 These messages are displayed by the **Chart** control if you don't define its horizontal and vertical axis. They are required (along with a series definition) to render the data that's associated with the chart at runtime. 
 
@@ -237,7 +237,7 @@ public sealed partial class MainPage : Page
 
 Running this application will display the chart of the data that's randomly generated:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/getting-started-uwp-3.png)
+![](https://i.imgur.com/Y0mYMpV.png)
 
 It's important to note that the **Chart** control is highly customizable. There are a number of properties that I can target that will modify the chart that's generated. For example, I can add the following XAML to my chart declaration to draw lines for the major axis points:
 
@@ -252,7 +252,7 @@ It's important to note that the **Chart** control is highly customizable. There 
 
 This change will display the chart with the X and Y-axis major lines drawn:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/getting-started-uwp-4.png)
+![](https://i.imgur.com/ZOTKLEM.png)
 
 From here, you can modify the XAML used to generate a chart to display an area chart:
 
@@ -272,13 +272,13 @@ From here, you can modify the XAML used to generate a chart to display an area c
 
 Running the application with this change will generate an area chart a different set of random data:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/getting-started-uwp-5.png)
+![](https://i.imgur.com/nSQmyOJ.png)
 
 As you delve into the specifics of the **Chart** control from **Telerik UI for UWP**, you'll discover that it has many built-in features. You can read more about these [features on the for the **Chart** control in our documentation](http://docs.telerik.com/devtools/universal-windows-platform/controls/radchart/overview).
 
 Now, let's see an example of the **Grid** in **Telerik UI for UWP** using the same underlying data.
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/grid-in-ui-for-uwp.png)
+![](https://i.imgur.com/US07dgE.png)
 
 The **Grid** control enables you to display and manipulate vast amounts of data in a control that's fast, fluid, and responsive. It's also highly customizable for operations like filtering, paging, sorting, and grouping. Let's see how to get a **Grid** control up and running in my existing UWP application.
 
@@ -325,7 +325,7 @@ In the XAML (above), I've made a couple of changes. First, I've changed the name
 
 Running this code displays our application with a modified layout:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/getting-started-uwp-6.png)
+![](https://i.imgur.com/DooYFsf.png)
 
 Now let's add the **Grid** control.
 
@@ -377,7 +377,7 @@ This is all that's required to add to our existing markup in order to have a **G
 
 You can start to appreciate just how powerful these controls are when you run the application:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/getting-started-uwp-7.png)
+![](https://i.imgur.com/an7WZ0v.png)
 
 By default, the **Grid** auto-generates the columns based on the object that it's bound to. This includes built-in filtering, which you can use to drill down into the data. Furthermore, the **Grid** control has grouping enabled by default. This allows me to combine rows that have equal column values. Let's modify the code that's used to generate this data to see how this works:
 
@@ -413,17 +413,17 @@ public class CityManager
 
 Here, I've added a Boolean property to the **City** class that I've given an arbitrary name. Its value will be randomly generated to be either true or false. When we run our application, notice that this new property is automatically displayed by the **Grid** control:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/getting-started-uwp-8.png)
+![](https://i.imgur.com/KW5Cu8R.png)
 
 The **Grid** control knows that this new column's type is a Boolean so it also uses a checkbox to display its value. This is also reflected in the filter drop-down menu in the column header:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/getting-started-uwp-9.png)
+![](https://i.imgur.com/taIF8Nz.png)
 
 The **Grid** control has support built-in for primitives types (i.e. Boolean) for operations like filtering, sorting, and grouping. When binding to complex types, you can control how values are displayed and navigated through these operations as well. If left undefined, the **Grid** control will display the type name for complex types by default.
 
 With grouping enabled by default, we can drag and drop a column header to the grouping area and have the rows grouped by the new property I've added:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/getting-started-uwp-10.png)
+![](https://i.imgur.com/WHpUYK1.png)
 
 Even when grouping is enabled, operations such as paging, filtering, and sorting remain intact.
 
@@ -431,19 +431,19 @@ Even when grouping is enabled, operations such as paging, filtering, and sorting
 
 As you've seen, incorporating Telerik UI for UWP into a UWP project is a manual process. Developers looking for a guided approach towards building applications with **Telerik UI for UWP** should check out [Windows Template Studio](https://aka.ms/wtsinstall):
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/windows-template-studio.png)
+![](https://i.imgur.com/YE41SyD.png)
 
 This extension for Visual Studio will generate a UWP application through templates. The goal is to get you up and running quickly with a project structure and source files that can be modified afterward.
 
 Recently, Windows Template Studio added templates for the **Chart** and **Grid** controls from Telerik UI for UWP:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/ui-for-uwp-in-wts.png)
+![](https://i.imgur.com/iC7SCXg.png)
 
 Selecting either of those controls will generate pages will the necessary XAML and code needed to display them:
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/wts-ui-for-uwp-grid.png)
+![](https://i.imgur.com/hnxbXfn.png)
 
-![](https://dl.dropboxusercontent.com/u/10016120/Progress/wts-ui-for-uwp-chart.png)
+![](https://i.imgur.com/5STFP47.png)
 
 ## Wrapping Up
 
