@@ -314,6 +314,10 @@ So what do you get with UI for Xamarin? Beautiful professionally engineered and 
 
 ## Better Windows Apps with UWP
 
+Over the past decade, Windows has undergone a lot of changes to account for industry trends and to reflect Microsoft's vision for its flagship operating system. These changes were made over the years and culminated with the release of Windows 10, an operating system that is no longer confined to the desktop. But instead, one that runs across a wide range of devices and form factors.
+
+Windows 10 also introduced a new way for creating apps to developers called the [Universal Windows Platform](https://docs.microsoft.com/en-au/windows/uwp/get-started/universal-application-platform-guide) (UWP). UWP represents an exciting opportunity for developers as it allows you to target a rich ecosystem of Windows-based devices through a unified API.
+
 ### Telerik UI for UWP
 
 ## Conclusion
