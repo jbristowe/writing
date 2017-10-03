@@ -10,7 +10,7 @@ With time, the .NET Framework grew in features and more abstractions that make l
 
 ### Why Pivot?  
 
-With all the advancements over the last 15 years, the .NET framework grew and grew. This was very convenient for developers, but it represented a giant framework nonetheless. This presented a new challenge since various apps across web/desktop/mobile platforms started depending on the same foundation. Updates became increasingly difficult and the ecosystem started becoming fragile -- it was clearly time for a change.
+With all the advancements over the last 15 years, the .NET Framework grew and grew. This was very convenient for developers, but it represented a giant framework nonetheless. This presented a new challenge since various apps across web/desktop/mobile platforms started depending on the same foundation. Updates became increasingly difficult and the ecosystem started becoming fragile -- it was clearly time for a change.
 
 A lot has changed in the software industry during the lifetime of .NET. The mobile revolution has changed the way we interact with software, cloud computing has turned hardware infrastructure into a service and cheaper computing has lead to exponential growth of technology. Machine learning is paving the way for software intelligence and portability across platforms is of utmost importance. We truly live in a "cloud-first" and "mobile-first" world now. 
 
@@ -40,18 +40,18 @@ Most .NET developers are likely not doing just one type of development - there m
 
 ## .NET Standard
 
-.NET Standard is a formal specification of .NET APIs that is intended to be available on all supporting .NET implementations - a way of conformity. The motivation behind .NET Standard is simple - have greater uniformity in the .NET ecosystem and allow for code portability/reuse.
+[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that is intended to be available on all supporting .NET implementations - a way of conformity. The motivation behind .NET Standard is simple - have greater uniformity in the .NET ecosystem and allow for code portability/reuse.
 
 [Insert DotNetStandard]
 
-You may ask - what about Portable Class Libraries (PCLs)? PCLs had the same promise of portability across platforms, however, implementations suffered as the number of PCL profiles increased. Developers were made to choose device families and pick the lowest common denominator across supported APIs. 
+You may ask, "What about [Portable Class Libraries](https://docs.microsoft.com/en-us/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library) (or PCLs)?" PCLs had the same promise of portability across platforms, however, implementations suffered as the number of PCL profiles increased. Developers were made to choose device families and pick the lowest common denominator across supported APIs. 
 
 .NET Standard is the next generation idea on portability - putting the API implementation responsibilities back on .NET platforms. While PCLs let developers code to the lowest common denominator of APIs available in supported platforms, .NET Standard takes a different route. The onus is now on the app platforms to implement .NET APIs. When your app supports a certain .NET Standard, you are guaranteed all APIs in that version of .NET Standard to be supported in all supporting app platforms. The goal of .NET Standard is two fold:
 
 * Define a uniform set of Base Class Library (BCL) APIs across all implementations of .NET, irrespective of workload or platform execution environment.
 * Enable developers to write portable libraries that are usable across .NET implementations, using the defined set of APIs.
 
-The various .NET implementations target specific versions of .NET Standard. Each .NET version essentially advertises the highest .NET Standard version it supports, which also means it supports previous versions. With the release of .NET Standard 2.0, .NET Core gets a lot of the feature parity with the full .NET Framework in terms of APIs. 
+The various .NET implementations target specific versions of .NET Standard. Each .NET version essentially advertises the highest .NET Standard version it supports, which also means it supports previous versions. With the [release of .NET Standard 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-standard-2-0/), .NET Core gets a lot of the feature parity with the full .NET Framework in terms of APIs. 
 
 ### Better Portability
 
