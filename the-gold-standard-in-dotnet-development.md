@@ -318,6 +318,8 @@ Over the past decade, Windows has undergone a lot of changes to account for indu
 
 ### Telerik UI for UWP
 
+Telerik UI for UWP is a suite of UI controls for Universal Windows Platform (UWP). You can find the source code (Apache License v2.0) and the documentation on GitHub. The suite contains controls that address common UI requirements in line-of-business (LOB) applications. These include data management (DataForm), scheduling (Calendar), navigation (RadialMenu), data visualization (Chart), and more.
+
 ## Conclusion
 
 PS: Many images courtesy of Microsoft.
