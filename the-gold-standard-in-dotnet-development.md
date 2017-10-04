@@ -314,11 +314,19 @@ So what do you get with UI for Xamarin? Beautiful professionally engineered and 
 
 ## Better Windows Apps with UWP
 
-Over the past decade, Windows has undergone a lot of changes to account for industry trends and to reflect Microsoft's vision for its flagship operating system. These changes culminated over the years with the release of Windows 10, which represents a significant milestone for Windows as a platform for users and as a target for developers. Unlike previous versions, Windows 10 is not confined to the desktop. Instead, it runs across a wide range of devices and form factors, including IoT devices running on ARM or x86/x64 architectures and platforms such as the Xbox, HoloLens, and Surface Hub. Windows 10 also introduces a new way for creating apps to developers called the [Universal Windows Platform](https://docs.microsoft.com/en-au/windows/uwp/get-started/universal-application-platform-guide) (UWP). UWP represents an exciting opportunity for developers as it allows you to target a rich ecosystem of Windows-based devices through a unified API.
+Over the past decade, Windows has undergone many changes to support industry trends and reflect Microsoft's vision for its flagship operating system. Numerous features and improvements were added over the years with Windows 7 and Windows 8. However, it wasn't until Windows 10 that things become interesting.
+
+Windows 10 represents a significant milestone for Windows as a platform for both users and developers. Unlike previous versions of Windows, Windows 10 is not confined to the desktop. Instead, it runs across a wide range of devices and form factors. This includes IoT devices (running on ARM or x86/x64 architectures) and platforms like the Xbox, HoloLens, and Surface Hub. For developers, Windows 10 also introduces a new way for creating apps called the [Universal Windows Platform](https://docs.microsoft.com/en-au/windows/uwp/get-started/universal-application-platform-guide) (UWP).
+
+UWP represents an exciting opportunity as it allows developers to target a rich ecosystem of Windows-based devices through a unified API. It achieves a long-standing goal at Microsoft of having one -- and only one -- version of Windows to target. Through this unified API, developers can now build applications that can run across devices.
+
+![](https://i.imgur.com/68VLh89.png)
 
 ### Telerik UI for UWP
 
-Telerik UI for UWP is a suite of UI controls for Universal Windows Platform (UWP). You can find the source code (Apache License v2.0) and the documentation on GitHub. The suite contains controls that address common UI requirements in line-of-business (LOB) applications. These include data management (DataForm), scheduling (Calendar), navigation (RadialMenu), data visualization (Chart), and more.
+Telerik UI for UWP is a suite of 20+ UI controls that help developers build UWP applications. It contains controls that address common UI requirements in line-of-business (LOB) applications, including data management (DataForm), scheduling (Calendar), navigation (RadialMenu), data visualization (Chart), and more.
+
+![](https://i.imgur.com/kkDpH5S.png)
 
 ## Conclusion
 
