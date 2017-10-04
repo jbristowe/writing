@@ -153,13 +153,13 @@ Also fresh off the press is ASP.NET Core 2.0 - with full support for .NET Core 2
 
 ### CLI or Visual Tooling 
 
-Developers building web apps with ASP.NET Core 2.0 have a plethora of rich tooling to choose from - come as you are and choose your development tools. Here are the choices:
+Developers building web apps with ASP.NET Core 2.0 have a plethora of rich tooling to choose from - come as you are and choose your development tools. Here are your choices:
 
-* Visual Studio on Windows - Full featured IDE | Gets new templates | All the benefits
-* Visual Studio for Mac - Full featured native Mac IDE | Gets templates
-* Visual Studio Code - Lightweight cross-platform text editor | Familiar coding experience | Integrated terminal
-* Command Line Tools - Truly cross-platform | Has all the templates | Supports every stage of web app development
-* Any rich text editor - With code intellisense support through OmniSharp
+* [Visual Studio 2017](https://www.visualstudio.com/vs/) (15.3+): a fully-featured IDE, featuring templates and extensions that target ASP.NET Core 2.0
+* [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac):  a native macOS IDE with templates for ASP.NET Core 2.0
+* [Visual Studio Code with the C# extension](https://code.visualstudio.com/docs/other/dotnet): a lightweight cross-platform text editor; provides a familiar coding experience and integrated terminal
+* Command line tools: truly cross-platform; has all ASP.NET Core 2.0 templates and supports every stage of web app development
+* A code text editor with code IntelliSense support through [OmniSharp](http://www.omnisharp.net)
 
 The good news for developers is .NET tooling is consistent - no matter what be your development tooling. What CLI can do over commands is exactly what Visual Studio does visually. Take a look at some of the app templates supported by 'dotnet new' CLI tooling - you'll see corresponding similar templates on doing File | New in Visual Studio. Some of the app templates are what you expect from ASP.NET - some are unexpected; we'll break things down.
 
