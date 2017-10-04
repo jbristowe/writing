@@ -36,7 +36,7 @@ A few years back, you would probably laugh if someone told you that Visual Studi
 
 Most .NET developers are likely not doing just one type of development - there may be some desktop development through WinForms/WPF or modern web development with ASP.NET Core or cross-platform mobile apps with Xamarin. Wouldn't it be nice if platform-independent code artifacts could be shared across various .NET platforms? 
 
-.NET, as we mentioned, comes in several flavors now - .NET Framework, .NET Core, Mono, Unity and other BCLs - all catering specific app platforms. Customized .NET flavors are great, but come with the obvious risk of fragmentation. To .NET developers, this should all be transparent - there is an obvious need for unification and code reusability across various .NETs. There is also some need to unify XAML - the UI markup language used across various .NET platforms. Let's talk standardization!
+.NET, as we mentioned, comes in several flavors now - .NET Framework, .NET Core, Mono, Unity and other BCLs - all catering specific app platforms. Customized .NET flavors are great, but come with the obvious risk of fragmentation. To .NET developers, this should all be transparent - there is an obvious need for unification and code reusability across various .NETs. There is also some need to unify [XAML](https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language) - the UI markup language used across various .NET platforms. Let's talk standardization!
 
 ## .NET Standard
 
@@ -83,7 +83,7 @@ With .NET Core 2.0 & .NET Standard 2.0, there's also little need to worry about 
 
 ## XAML Standard
 
-XAML at its core, is just a simple XML-based markup language. There was no hardcore syntax specifications and no one team at Microsoft really owned XAML. As a result, as more app platforms picked up XAML as the UI layer, XAML itself got a little morphed each time. After all, it was up to the app platform's rendering engine to make sense of the XAML markup – so each one went a little in their own direction for maximum benefit.
+[XAML](https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language) at its core, is just a simple XML-based markup language. There was no hardcore syntax specifications and no one team at Microsoft really owned XAML. As a result, as more app platforms picked up XAML as the UI layer, XAML itself got a little morphed each time. After all, it was up to the app platform's rendering engine to make sense of the XAML markup – so each one went a little in their own direction for maximum benefit.
 
 All this brings us to today – a fragmented XAML world. WPF, Silverlight, UWP and Xamarin.Forms all talk a slightly different dialect of XAML. Developers still love XAML and the core concepts along with tooling remain about the same – there are just those nagging differences in XAML markup across platforms.
 
@@ -97,7 +97,7 @@ Consider the two most modern app platforms that use XAML – UWP and Xamarin.For
 
 This XAML fragmentation impedes code portability and is just frustrating for developers – clearly we can do better.
 
-XAML Standard is a standards-based effort to unify XAML dialects across app platforms. The goal is to specify a standard XAML vocabulary and all supporting app platforms adhere to the standard – apps should be able to share common XAML-based UI definitions.
+[XAML Standard](https://github.com/Microsoft/xaml-standard) is a standards-based effort to unify XAML dialects across app platforms. The goal is to specify a standard XAML vocabulary and all supporting app platforms adhere to the standard – apps should be able to share common XAML-based UI definitions.
 
 These are still early days for XAML Standard. The XAML Standard specification is being developed out in the open with collaboration from the developer community. Post-specification, the immediate plan is to support the UWP and Xamarin.Forms platforms. Developers can continue developing UWP/Xamarin.Forms apps as they do today. When XAML Standard support is enabled, the XAML markup will just be reusable and shared between the frameworks.
 
@@ -190,8 +190,8 @@ ASP.NET Core 2.0 web apps support fast streamlined bootstrapping - this is espec
 ```c#
 public static IWebHost BuildWebHost(string[] args) =>
   WebHost.CreateDefaultBuilder(args)
-	     .UseStartup<Startup>()
-		 .Build();
+         .UseStartup<Startup>()
+         .Build();
 ```
 
 Before ASP.NET Core 2.0, Razor view files were published as .CSHTML files, which were compiled at runtime -  this just-in-time compilation came at the expense of a performance hit. In older applications, developers could choose to manually precompile Razor views to reduce the published bundle and increase startup time. Now with ASP.NET Core 2.0 project templates, precompilation is enabled by default - this boosting app startup performance.
