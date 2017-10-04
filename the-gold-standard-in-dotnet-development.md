@@ -328,7 +328,7 @@ In addition to leveraging device-specific APIs, UWP also enables developers to b
 
 ### Windows Store
 
-One of the biggest changes brought forth with Windows 8 and heavily-utilised in Windows 10 is the Windows Store. This is Microsoft's application distribution platform that allows developers to make their applications available to Windows users.
+One of the biggest changes introduced with Windows 8 and featured prominently in Windows 10 is the Windows Store. This is Microsoft's distribution platform for free and commercial apps. It's a curated environment that requires developers to have their applications certified prior to publication. This may seem like a significant hurdle, but one that's worthwhile when you consider the fact that it makes these applications available to millions of Windows users.
 
 The Windows Store uses the .AppX packaging format, which is a step up from the traditional model of executables and libraries. The .AppX packaging format allows developer to express their application's intent. This enables them to express which capabilities they require for applications to operate correctly on Windows 10. This way, users can download applications from the Windows Store with a higher level of trust over the traditional application model.
 
