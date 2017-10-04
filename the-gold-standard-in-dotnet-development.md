@@ -272,13 +272,13 @@ Here's a handful of benefits that come with the SPA templates in ASP.NET Core 2.
 
 As you can see, modern ASP.NET comes in variety of flavors - developers can mix/match server side C# with client-side JS. One thing stays true though - web apps need polished UI to stand out and developers should not reinvent the wheel. Telerik offers various UI suites for lighting up your web apps, no matter how you build them: 
 
-* Telerik UI for ASP.NET Ajax - For WebForms apps
-* Telerik UI for ASP.NET MVC - For traditional MVC apps
-* Telerik UI for ASP.NET Core - Support for ASP.NET Core and TagHelpers
-* Kendo UI for jQuery - For front-end JavaScript web apps
-* Kendo UI for Angular - Components for Angular-based apps
-* Kendo UI for React - Components for React-based apps
-* Kendo UI for Vue - Vue components for rendering UI
+* [Telerik UI for ASP.NET AJAX](https://telerik.com/aspnet-ajax) - for WebForms apps
+* [Telerik UI for ASP.NET MVC](https://telerik.com/aspnet-mvc) - for traditional MVC web apps
+* [Telerik UI for ASP.NET Core](https://telerik.com/aspnet-core-ui) - support for ASP.NET Core and TagHelpers
+* [Kendo UI for jQuery](https://telerik.com/kendo-ui) - UI widgets for jQuery-based web apps
+* [Kendo UI for Angular](https://telerik.com/kendo-angular-ui) - UI components for Angular-based web apps
+* [Kendo UI for React](https://telerik.com/kendo-react-ui) - UI components for React-based web apps
+* [Kendo UI for Vue](https://telerik.com/kendo-vue-ui) - UI components for Vue-based web apps
 
 ## Better Mobile Apps with Xamarin
 
