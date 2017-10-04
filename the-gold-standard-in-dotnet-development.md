@@ -314,13 +314,23 @@ So what do you get with UI for Xamarin? Beautiful professionally engineered and 
 
 ## Better Windows Apps with UWP
 
-Over the past decade, Windows has undergone many changes to support industry trends and reflect Microsoft's vision for its flagship operating system. Numerous features and improvements were added over the years with Windows 7 and Windows 8. However, it wasn't until Windows 10 that things become interesting.
+Over the past decade, Windows has undergone many changes to support industry trends and reflect Microsoft's vision for its flagship operating system. Numerous features and improvements were added over the years with Windows 7 and Windows 8. However, it wasn't until Windows 10 that things became interesting.
 
 Windows 10 represents a significant milestone for Windows as a platform for both users and developers. Unlike previous versions of Windows, Windows 10 is not confined to the desktop. Instead, it runs across a wide range of devices and form factors. This includes IoT devices (running on ARM or x86/x64 architectures) and platforms like the Xbox, HoloLens, and Surface Hub. For developers, Windows 10 also introduces a new way for creating apps called the [Universal Windows Platform](https://docs.microsoft.com/en-au/windows/uwp/get-started/universal-application-platform-guide) (UWP).
 
 UWP represents an exciting opportunity as it allows developers to target a rich ecosystem of Windows-based devices through a unified API. It achieves a long-standing goal at Microsoft of having one -- and only one -- version of Windows to target. Through this unified API, developers can now build applications that can run across devices.
 
 ![](https://i.imgur.com/68VLh89.png)
+
+Not all devices are the same. Some support capabilities that are unique. UWP supports the ability to target these capabilities through Extension SDKs. These are device-specific APIs that can be targeted by developers to take advantage of these features.
+
+In addition to leveraging device-specific APIs, UWP also enables developers to build applications with adaptive controls and input. This is a concept known as Responsive Design that's being populated in web development circles. This is the ability for applications to work across devices with differing screen dimensions and forms of user input (i.e. Xbox One controllers).
+
+### Windows Store
+
+One of the biggest changes brought forth with Windows 8 and heavily-utilised in Windows 10 is the Windows Store. This is Microsoft's application distribution platform that allows developers to make their applications available to Windows users.
+
+The Windows Store uses the .AppX packaging format, which is a step up from the traditional model of executables and libraries. The .AppX packaging format allows developer to express their application's intent. This enables them to express which capabilities they require for applications to operate correctly on Windows 10. This way, users can download applications from the Windows Store with a higher level of trust over the traditional application model.
 
 ### Telerik UI for UWP
 
