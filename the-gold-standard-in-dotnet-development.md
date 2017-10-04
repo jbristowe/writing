@@ -148,7 +148,7 @@ Also fresh off the press is ASP.NET Core 2.0 - with full support for .NET Core 2
 * Can act as super fast API backend for Mobile apps
 * New Razor Pages support
 * New project templates
-* Streamlined support for client-side JS SPA frameworks
+* Streamlined support for client-side JavaScript SPA frameworks
 * Improved Logging, App Insight & Azure tooling
 
 ### CLI or Visual Tooling 
@@ -234,7 +234,7 @@ Notice how the PageModel and server-side C# code can be written entirely within 
 
 Traditional ASP.NET web development mostly relies on server-side rendering with Razor and other view engines. However, browsers have come a long way and JavaScript is ubiquitous - one may argue that client-side web development is where things are headed. ASP.NET Core 2.0 is a modern web framework and in no way, attempts to hold developers back in building their web apps however they see fit.
 
-Developers have always been able to bring in JavaScript, CSS and other front-end web development artifacts into the ASP.NET stack. However modern full-featured JavaScript frameworks do a lot out of the box and it doesn't make much sense for developers to reinvent the wheel. There are several popular Single Page Application (SPA) type JS frameworks that aid in building fully front-end web apps with navigation, state management, bundling and the works. Turns out, ASP.NET Core 2.0 works veru nicely with these SPA frameworks.
+Developers have always been able to bring in JavaScript, CSS and other front-end web development artifacts into the ASP.NET stack. However modern full-featured JavaScript frameworks do a lot out of the box and it doesn't make much sense for developers to reinvent the wheel. There are several popular Single Page Application (SPA) type JavaScript frameworks that aid in building fully front-end web apps with navigation, state management, bundling and the works. Turns out, ASP.NET Core 2.0 works very nicely with these SPA frameworks.
 
 Arguably, two of the most popular JavaScript SPA frameworks are - Angular and React. And ASP.NET Core 2.0 offers built-in templates - both with dotnet CLI or the Visual Studio File | New Project route. If going the Angular route, below is a sample project as scaffolded by the ASP.NET Core 2.0 Angular template:
 
@@ -259,18 +259,18 @@ Once the ASP.NET Core 2.0 Angular template is done scaffolding, developers have 
 
 [Insert AngularTemplateRun]
 
-The Angular/React templates in ASP.NET Core 2.0 are meant get .NET developers to a good starting point with SPA projects and includes abstractions to fast-track newcomers. Like any other project templates, these new SPA templates aren't required, but rather helpful. Development teams can always build two separate projects - a fully front-end SPA web app with JS frameworks and an ASP.NET WebAPI project serving up data from the backend. ASP.NET is quite happy in this role and will support APIs for a variety of client apps. But most modern SPA/JS web apps need a lot of orchestration - configuring services, bundlers and managing dependencies. This wild-west approach may be intimidating for many .NET developers and this is where the ASP.NET Core 2.0 Angular/React templates comes in - they have pre-configured front-end tooling and hook up a bunch of things for developers behind the scenes.
+The Angular/React templates in ASP.NET Core 2.0 are meant get .NET developers to a good starting point with SPA projects and includes abstractions to fast-track newcomers. Like any other project templates, these new SPA templates aren't required, but rather helpful. Development teams can always build two separate projects - a fully front-end SPA web app with JavaScript frameworks and an ASP.NET WebAPI project serving up data from the backend. ASP.NET is quite happy in this role and will support APIs for a variety of client apps. But most modern SPA/JavaScript web apps need a lot of orchestration - configuring services, bundlers and managing dependencies. This wild-west approach may be intimidating for many .NET developers and this is where the ASP.NET Core 2.0 Angular/React templates comes in - they have pre-configured front-end tooling and hook up a bunch of things for developers behind the scenes.
 
 Here's a handful of benefits that come with the SPA templates in ASP.NET Core 2.0:
 
-* Support for server-side pre-rendering of JS components | Embeds NodeJS in ASP.NET runtime hosting
-* Webpack Hot Module Replacement | Speeds up dev/test cycles by automatically refreshing components on TS/JS/CSS edits
+* Support for server-side pre-rendering of JavaScript components | Embeds NodeJS in ASP.NET runtime hosting
+* Webpack Hot Module Replacement | Speeds up dev/test cycles by automatically refreshing components on TypeScript/JavaScript/CSS edits
 * Node Module dependency management | All of what Angular/React need are referenced and managed
 * Webpack integration is built-in | Does bundling, minification and TypeScript compilation
 
 ### Telerik UI for Web
 
-As you can see, modern ASP.NET comes in variety of flavors - developers can mix/match server side C# with client-side JS. One thing stays true though - web apps need polished UI to stand out and developers should not reinvent the wheel. Telerik offers various UI suites for lighting up your web apps, no matter how you build them: 
+As you can see, modern ASP.NET comes in variety of flavors - developers can mix/match server side C# with client-side JavaScript. One thing stays true though - web apps need polished UI to stand out and developers should not reinvent the wheel. Telerik offers various UI suites for lighting up your web apps, no matter how you build them: 
 
 * [Telerik UI for ASP.NET AJAX](https://telerik.com/aspnet-ajax) - for WebForms apps
 * [Telerik UI for ASP.NET MVC](https://telerik.com/aspnet-mvc) - for traditional MVC web apps
