@@ -330,6 +330,8 @@ In addition to leveraging device-specific APIs, UWP also enables developers to b
 
 One of the biggest changes introduced with Windows 8 and featured prominently in Windows 10 is the Windows Store. This is Microsoft's distribution platform for free and commercial apps. It's a curated environment that requires developers to have their applications certified prior to publication. This may seem like a significant hurdle, but one that's worthwhile when you consider the fact that it makes these applications available to millions of Windows users.
 
+![](https://i.imgur.com/wExvfzZ.png)
+
 The Windows Store uses the .AppX packaging format, which is a step up from the traditional model of executables and libraries. The .AppX packaging format allows developer to express their application's intent. This enables them to express which capabilities they require for applications to operate correctly on Windows 10. This way, users can download applications from the Windows Store with a higher level of trust over the traditional application model.
 
 ### Telerik UI for UWP
@@ -337,6 +339,35 @@ The Windows Store uses the .AppX packaging format, which is a step up from the t
 Telerik UI for UWP is a suite of 20+ UI controls that help developers build UWP applications. It contains controls that address common UI requirements in line-of-business (LOB) applications, including data management (DataForm), scheduling (Calendar), navigation (RadialMenu), data visualization (Chart), and more.
 
 ![](https://i.imgur.com/kkDpH5S.png)
+
+This controls can be easily incorporated into existing UWP projects via NuGet. Once added, controls can be added and qualified in XAML pages through prefixes and namespaces. Here's an example using the `RadialGauge` control:
+
+```xaml
+<Page xmlns:telerik="using:Telerik.UI.Xaml.Controls.DataVisualization">
+  ...
+  <telerik:RadRadialGauge>
+    ...
+  </telerik:RadRadialGauge>
+</Page>
+```
+
+These controls can be used with controls from other libraries such as the UWP Community Toolkit. This combination empowers developers to build extremely powerful and versatile UWP applications. Incorporating these controls into existing applications is fairly trivial. That stated, if developers looking for a guided approach towards building new applications with Telerik UI for UWP should check out Windows Template Studio:
+
+![](https://i.imgur.com/YE41SyD.png)
+
+This extension for Visual Studio will generate a UWP application through templates. The goal is to get you up and running quickly with a project structure and source files that can be modified afterward.
+
+Recently, Windows Template Studio added templates for the Chart and Grid controls from Telerik UI for UWP:
+
+![](https://i.imgur.com/iC7SCXg.png)
+
+Selecting either of those controls will generate pages will the necessary XAML and code needed to display them:
+
+![](https://i.imgur.com/hnxbXfn.png)
+
+![](https://i.imgur.com/5STFP47.png)
+
+Windows Template Studio is available to [download and install from the Visual Studio Marketplace](https://aka.ms/wtsinstall).
 
 ## Conclusion
 
