@@ -22,7 +22,7 @@ With this new era of computing, .NET had to evolve to support the next generatio
 
 Let's take a look at the bigger picture, as we stand today.
 
-![](https://i.imgur.com/V45Pkns.png)
+![](https://i.imgur.com/nakIiTQ.png)
 
 This isn't your grandma's .NET and not your grandpa's tooling. No offense to grandparents, but things have changed a lot in the .NET landscape. There are several flavors of .NET now - [.NET Framework](https://en.wikipedia.org/wiki/.NET_Framework), [.NET Core](https://en.wikipedia.org/wiki/.NET_Framework#.NET_Core), [Mono](https://en.wikipedia.org/wiki/Mono_(software)), [Unity](https://en.wikipedia.org/wiki/Unity_(game_engine)) and other Base Class Libraries (BCLs) - all catering specific app platforms towards the developer's benefit. 
 
