@@ -22,7 +22,7 @@ With this new era of computing, .NET had to evolve to support the next generatio
 
 Let's take a look at the bigger picture, as we stand today.
 
-[Insert DotNet]
+![](https://i.imgur.com/V45Pkns.png)
 
 This isn't your grandma's .NET and not your grandpa's tooling. No offense to grandparents, but things have changed a lot in the .NET landscape. There are several flavors of .NET now - [.NET Framework](https://en.wikipedia.org/wiki/.NET_Framework), [.NET Core](https://en.wikipedia.org/wiki/.NET_Framework#.NET_Core), [Mono](https://en.wikipedia.org/wiki/Mono_(software)), [Unity](https://en.wikipedia.org/wiki/Unity_(game_engine)) and other Base Class Libraries (BCLs) - all catering specific app platforms towards the developer's benefit. 
 
@@ -42,7 +42,7 @@ Most .NET developers are likely not doing just one type of development - there m
 
 [.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that is intended to be available on all supporting .NET implementations - a way of conformity. The motivation behind .NET Standard is simple - have greater uniformity in the .NET ecosystem and allow for code portability/reuse.
 
-[Insert DotNetStandard]
+![](https://i.imgur.com/c6hvROc.png)
 
 You may ask, "What about [Portable Class Libraries](https://docs.microsoft.com/en-us/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library) (or PCLs)?" PCLs had the same promise of portability across platforms, however, implementations suffered as the number of PCL profiles increased. Developers were made to choose device families and pick the lowest common denominator across supported APIs. 
 
@@ -55,9 +55,18 @@ The various .NET implementations target specific versions of .NET Standard. Each
 
 ### Better Portability
 
-You can get a glimpse of the various .NETs and their support of corresponding .NET Standard versions - things are moving along nicely. All this means more portability of .NET code and libraries for developers - reuse all things from a developer's perspective.
+You can get a glimpse of the different implementations of .NET and their support of corresponding .NET Standard versions - things are moving along nicely. All this means more portability of .NET code and libraries for developers - reuse all things from a developer's perspective.
 
-[Insert DotNetStandardSupport]
+| Implementation | | | | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| .NET Standard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 | 2.0 |
+| .NET Core | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2.0 |
+| .NET Framework (with .NET Core 1.x SDK) | 4.5 | 4.5 | 4.5.1 | 4.6 | 4.6.1 | 4.6.2 | | |
+| .NET Framework (with .NET Core 2.0 SDK) | 4.5 | 4.5 | 4.5.1 | 4.6 | 4.6.1 | 4.6.1 | 4.6.1 | 4.6.1 |
+| Mono | 4.6 | 4.6 | 4.6 | 4.6 | 4.6 | 4.6 | 4.6 | 5.4 |
+| Xamarin.iOS | 10.0 | 10.0 | 10.0 | 10.0 | 10.0 | 10.0 | 10.0 | 10.14 |
+| Xamarin.Mac | 3.0 | 3.0 | 3.0 | 3.0 | 3.0 | 3.0 | 3.0 | 3.8 |
+| Xamarin.Android | 7.0 | 7.0 | 7.0 | 7.0 | 7.0 | 7.0 | 7.0 | 7.5 |
 
 The common APIs for the .NET Framework and Xamarin were used as a basis for .NET Standard. With .NET Standard 2.0, this surface extends across the .NET ecosystem forming a Base Class Library of over 32000 APIs. These additions make it much easier to port existing code over to .NET Standard - there are API analyzers to help developers bring their code over to be .NET Standards comliant. Since .NET Standard acts as a BCL API definition, additional Framework Class Libraries can provide platform specific functionality - on top of their support for a specific .NET Standard version. Because of this moving, existing applications to frameworks that use .NET Standard implementations gets much easier.
 
@@ -65,19 +74,21 @@ The common APIs for the .NET Framework and Xamarin were used as a basis for .NET
 
 A developers time is valuable - maintaining a long lists of APIs or profiles to adhere to .NET Standard isn't efficient. Managing .NET Standard compliance in a project is extremely simple - instead of requiring the individual dependencies that make up .NET Standard, a single reference is used.
 
-	<Project Sdk="Microsoft.NET.Sdk"> 
-		<PropertyGroup> 
-			<TargetFramework>netstandard2.0</TargetFramework> 
-		</PropertyGroup> 
-	</Project>
+```xml
+<Project Sdk="Microsoft.NET.Sdk"> 
+  <PropertyGroup> 
+    <TargetFramework>netstandard2.0</TargetFramework> 
+  </PropertyGroup> 
+</Project>
+```
 
-The single reference to <TargetFramework>netstandard2.0</TargetFramework> in a .csproj file provides the API definitions needed for your application. This works because the reference to netstandard is a meta-package. The netstandard package does not contain any dlls, but instead references other packages required by the application. Only packages that satisfy the .NET Standard implementation for the platform your application targets will be added to the project. Therefore the same netstandard reference is applicable to Xamarin, ASP.NET Core and the like.
+The single reference to `<TargetFramework>netstandard2.0</TargetFramework>` in a .csproj file provides the API definitions needed for your application. This works because the reference to netstandard is a meta-package. The netstandard package does not contain any dlls, but instead references other packages required by the application. Only packages that satisfy the .NET Standard implementation for the platform your application targets will be added to the project. Therefore the same netstandard reference is applicable to Xamarin, ASP.NET Core and the like.
 
 ### .NET Core 2.0
 
 The recent .NET Core 2.0 is a milestone release for .NET going forward and for backwards compatibility. .NET Core is now at almost feature parity with the .NET Framework - there are only about 43 APIs that aren't supported. Here are some major API pieces that were missing in .NET Core 1.X that are now back in 2.0 - the reasons to not upgrade to .NET Core 2.0 are getting slimmer.
 
-[Insert DotNetAPIs]
+![](https://i.imgur.com/5VZW8bN.png)
 
 With .NET Core 2.0 & .NET Standard 2.0, there's also little need to worry about legacy code. There are several attributes to .NET Core that make it well suited for transitioning from legacy code. Because .NET Standard 2.0 is at near API parity with .NET Framework 4.6.1, most applications can make use of code they already have. In addition, .NET Core includes a compatibility shim that allows projects to reference existing .NET Framework NuGet packages and projects. This means most packages on NuGet today are already compatible with .NET Core 2.x without the need to be recompiled. Having the ability to migrate existing applications to the next generation .NET, gives developers the freedom to write future proof code and move the business forward with minimal risk.
 
@@ -89,11 +100,11 @@ All this brings us to today – a fragmented XAML world. WPF, Silverlight, UWP a
 
 Consider the two most modern app platforms that use XAML – UWP and Xamarin.Forms. To do the exact same UI renderings, developers need to use different XAML markup, as illustrated in the handful of examples below:
 
-* Placeholder control: StackLayout Vs StackPanel?
-* Text field control: Label Vs TextBlock?
-* Text entry control: Entry Vs TextBox?
-* Button control name: Text Vs Content?
-* ForeColor property: TextColor Vs ForeGround?
+* Placeholder control: `StackLayout` vs `StackPanel`?
+* Text field control: `Label` vs `TextBlock`?
+* Text entry control: `Entry` vs `TextBox`?
+* `Button` control name: `Text` vs `Content`?
+* `ForeColor` property: `TextColor` vs `ForeGround`?
 
 This XAML fragmentation impedes code portability and is just frustrating for developers – clearly we can do better.
 
@@ -105,35 +116,35 @@ Ever since the Microsoft Xamarin acquisition, hardcore XAML fans have been hopin
 
 It should be noted that XAML Standard is a UI markup specification. Under the covers, it will use the native UI rendering mechanism of the supporting app platform, thus not holding back the developer or platforms in any way. Architecturally, you can see where the new XAML Standard, along with .NET Standard specifications, fit in the Microsoft development stack – it is critical to the true cross-platform portability story.
 
-[Insert XAMLStandard]
+![](https://i.imgur.com/oGlVtyd.jpg)
 
 For XAML Standard V1, the goal is to come up with a list of commonly used UI components and standardize their usage through specified properties/methods/events. The point is, no matter what platform you are writing apps for, you will set up the UI consistently using the same XAML syntax. Here's the list of some of the popular UI controls that are being standardized for properties and events:
 
-* Button
-* TextBlock
-* TextBox
-* ComboBox
-* Grid
-* StackPanel
-* Page
-* UserControl
+* `Button`
+* `TextBlock`
+* `TextBox`
+* `ComboBox`
+* `Grid`
+* `StackPanel`
+* `Page`
+* `UserControl`
 
-Based on the type of control, developers will have standard ways of setting the content inside the UI component. Controls like Button, TextBlock, TextBox and ComboBox deal with textual content and often need developer control over how the text is rendered. These controls will sport the following standard properties around managing Font:
+Based on the type of control, developers will have standard ways of setting the content inside the UI component. Controls like `Button`, `TextBlock`, `TextBox`, and `ComboBox` deal with textual content and often need developer control over how the text is rendered. These controls will sport the following standard properties around managing Font:
 
-* FontSize
-* FontWeight
-* FontStyle
-* FontFamily
+* `FontSize`
+* `FontWeight`
+* `FontStyle`
+* `FontFamily`
 
 Developers often need to control the size and placement of common UI controls. To further aid standardization, the following properties will be available on all the UI controls listed above – just style them consistently:
 
-* Margin
-* HorizontalAlignment
-* VerticalAlignment
-* Height
-* Width
+* `Margin`
+* `HorizontalAlignment`
+* `VerticalAlignment`
+* `Height`
+* `Width`
 
-Aside from app developers not having to remember multiple dialects of XAML for different platforms, the XAML Standards spec has one huge potential – portability. How often do you have a piece of UI that is very similar between the same app on various platforms? Think a simple User Settings screen or a Credit Card Payment screen – wouldn't it be nice if the UI could be shared?
+Aside from app developers not having to remember multiple dialects of XAML for different platforms, the XAML Standards spec has one huge potential – portability. How often do you have a piece of UI that is very similar between the same app on various platforms? Think a simple user settings screen or a credit card payment screen – wouldn't it be nice if the UI could be shared?
 
 Sharing of UI across platforms is exactly what XAML Standard enables. Bundle up some commonly used piece of UI using the standardized controls into a single XAML page – the syntax is the same for all supported platforms. All of a sudden, your XAML page just becomes shareable – take it to any platform and use it as is without modification. Imagine the kind of reusability this will bring to your code bases supporting apps on different platforms - thanks to XAML Standard.
 
@@ -163,9 +174,9 @@ Developers building web apps with ASP.NET Core 2.0 have a plethora of rich tooli
 
 The good news for developers is .NET tooling is consistent - no matter what be your development tooling. What CLI can do over commands is exactly what Visual Studio does visually. Take a look at some of the app templates supported by 'dotnet new' CLI tooling - you'll see corresponding similar templates on doing File | New in Visual Studio. Some of the app templates are what you expect from ASP.NET - some are unexpected; we'll break things down.
 
-[Insert CLITemplates]
+![](https://i.imgur.com/zvvGxGS.png)
 
-[Insert VSTemplates]
+![](https://i.imgur.com/lYMB1xp.png)
 
 ### Easy Dependencies
 
@@ -181,7 +192,7 @@ The ASP.NET team has created one of the most streamlined ASP.NET application arc
 
 One of the nicest things about .NET Core 2.0 and ASP.NET Core 2.0 for developers is portability - the framework and tooling is consistent across all platforms. Developers' choice of development OS does not matter - Windows and Mac have an identical experience. Gone is the ASP.NET specific Project.json file for dependencies and configuration - the familiar .CSProj file is back, as shown below for a boilerplate ASP.NET Core 2.0 project. Whether the ASP.NET project is scaffolded from Visual Studio File | New Project or through the dotnet new CLI tools, the resulting project has the same exact .CSProj file - it simply points to the target runtime framework and pulls in the .NET dependencies. This also means that developers can collaborate easier and have ASP.NET projects be portable across machines. It is perfectly conceivable to have multiple developers work on the same ASP.NET project, but using different IDEs - one on Visual Studio on Windows, one on Visual Studio for Mac and yet others, on simple text editors. The .SLN and .CSProj files are perfectly portable and the code writing experience is the same everywhere.  
 
-[Insert CSProj]
+![](https://i.imgur.com/OIxIdSy.png)
 
 ### Easy Bootstrapping
 
@@ -212,21 +223,82 @@ There is a new programming model for simple web pages in ASP.NET Core - called R
 
 Here is what ASP.NET Core 2.0 project templates put out for a Razor Pages project - notice the simplicity of the Pages directory, as compared to a full MVC project:
 
-[Insert RazorPagesSetup]
+![](https://i.imgur.com/7QeWuFO.png)
 
 Let's look at a simple Razor Page view - a CSHTML file with a @page directive on top:
 
-[Insert RazorPageView]
+```c#
+@page
+
+@model AboutModel
+@{
+  ViewData["Title"] = "About";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.CodeBehindModelMessage</h3>
+
+<p>Use this area to provide additional information.</p>
+```
 
 Notice how the view points to a Model and pulls data out of the model. Turns out, the model is defined in a code-behind file - with the same name as the view with .CS at end, simply by convention:
 
-[Insert RazorPageCodeBehind]
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+namespace AspNetCore2Razor.Pages
+{
+  public class AboutModel : PageModel
+  {
+    public string CodeBehindModelMessage { get; set; }
+
+    public void OnGet()
+    {
+      CodeBehindModelMessage = "This is from the code-behind.";
+    }
+  }
+}
+```
 
 Notice how the model implements a PageModel - a base class that binds together much of the Razor Pages features. The page models can define methods that correspond to HTTP verbs - like Get, Put, Delete and Post - for supporting CRUD operations when the Razor Page posts back to the server. You can see how this simple model helps support putting content out on Razor Pages and adding dynamic features through simple server roundtrips.
 
 Now, here's a little variation to defining a PageModel for a Razor Page - this time in the View itself:
 
-[Insert RazorPageNoCodeBehind]
+```c#
+@page
+@model ContactModel
+@using Microsoft.AspNetCore.Mvc.RazorPages
+
+@functions {
+  public class ContactModel : PageModel
+  {
+    public string InPageModelMessage { get; set; }
+
+    public void OnGet()
+    {
+      InPageModelMessage = "This is from the View.";
+    }
+  }
+}
+
+<h3>@Model.InPageModelMessage</h3>
+
+<address>
+  One Microsoft Way<br />
+  Redmond, WA 98052-6399<br />
+  <abbr title="Phone">P:</abbr>
+  425.555.0100
+</address>
+
+<address>
+  <strong>Support:</strong> <a href="mailto:support@example.com">support@example.com</a><br />
+  <strong>Marketing:</strong> <a href="mailto:marketing@example.com>marketing@example.com</a>
+</address>
+```
 
 Notice how the PageModel and server-side C# code can be written entirely within a Razor Page view - skipping the code-behind file altogether. While doable, this is not suggested for any complicated pages with substantial code in the PageModel - separation of concerns is always nice. 
 
@@ -238,7 +310,7 @@ Developers have always been able to bring in JavaScript, CSS and other front-end
 
 Arguably, two of the most popular JavaScript SPA frameworks are - Angular and React. And ASP.NET Core 2.0 offers built-in templates - both with dotnet CLI or the Visual Studio File | New Project route. If going the Angular route, below is a sample project as scaffolded by the ASP.NET Core 2.0 Angular template:
 
-[Insert AngularTemplateProject]
+![](https://i.imgur.com/Yk3ICXj.png)
 
 Developers should notice a few differences right away, compared to traditional ASP.NET MVC projects:
 
@@ -246,18 +318,28 @@ Developers should notice a few differences right away, compared to traditional A
 * The point is to build a true SPA | All of the app's functionality is client-side
 * Accordingly, the ClientApp folder is where most of the app's code lives
 * App features are built as reusable app components
-* Node Package Manager (NPM) is used to bring in Node and other app dependencies
+* npm is used to bring in app dependencies
 * WebPack is used for configurations and component bundling
 * Each component is commonly made up of HTML and CSS | JavaScript pulls it all together
 * App business logic is commonly written in TypeScript for Angular 2.0 forward
 
 Below is a sample app component in TypeScript:
 
-[Insert AppComponent]
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+
+export class AppComponent { }
+```
 
 Once the ASP.NET Core 2.0 Angular template is done scaffolding, developers have a familiar dotnet run or F5 exoerience to run the app - notice the app template being different from traditional ASP.NET apps. The experience when using the ASP.NET Core 2.0 React template is identical.
 
-[Insert AngularTemplateRun]
+![](https://i.imgur.com/MDSsMGW.png)
 
 The Angular/React templates in ASP.NET Core 2.0 are meant get .NET developers to a good starting point with SPA projects and includes abstractions to fast-track newcomers. Like any other project templates, these new SPA templates aren't required, but rather helpful. Development teams can always build two separate projects - a fully front-end SPA web app with JavaScript frameworks and an ASP.NET WebAPI project serving up data from the backend. ASP.NET is quite happy in this role and will support APIs for a variety of client apps. But most modern SPA/JavaScript web apps need a lot of orchestration - configuring services, bundlers and managing dependencies. This wild-west approach may be intimidating for many .NET developers and this is where the ASP.NET Core 2.0 Angular/React templates comes in - they have pre-configured front-end tooling and hook up a bunch of things for developers behind the scenes.
 
@@ -286,8 +368,9 @@ Congratulations! You have picked Xamarin to build your next cross-platform mobil
 
 All Xamarin apps - Xamarin.iOS/Android and Xamarin.Forms work with .NET Standard libraries. Xamarin developers should look to abstract out any code that be shared - and this is best done as a .NET Standard library for maximum portability. The dream of re-using code between Xamarin and other .NET apps is a reality - thanks to the common API platform offered by .NET Standard. Needless to say, .NET Standard libraries can be created from scratch in Visual Studio, Visual Studio for Mac or CLI:
 
-[Insert VSCreateNetStandard]
-[Insert VSMacCreateNetStandard]
+![](https://i.imgur.com/946nMYC.png)
+
+![](https://i.imgur.com/Gihrkn2.png)
 
 Any .NET Standard library can be consumed inside Xamarin apps - be it directly from NuGet or through 3rd party sources. Developers can use .NET Standard dependencies in their Xamarin apps out of the box - no changes to existing dependencies required. In fact, the recent Xamarin.Forms 2.4.0 stable release has full support for .NET Standard 2.0. Good times ahead for Xamarin developers trying to share code across platforms.
 
@@ -301,16 +384,25 @@ It is easy to integrate Telerik UI for Xamarin in your existing projects - get t
 
 So what do you get with UI for Xamarin? Beautiful professionally engineered and highly performant UI - all the ammunition you need to delight users. You have gorgeous Charts, must-have ListViews, LOB-friendly DataGrids, handy Gauges, pixel-perfect Calendars, magical SideDrawers, super-helpful DataForm, essential TabView and much more. Powering Telerik UI for Xamarin is truly native UI for each platform - with support for Xamarin.iOS, Xamarin.Android and Xamarin.Forms. 
 
-[Insert TelerikBusyIndicator]
-[Insert TelerikCalendar]
-[Insert TelerikChart]
-[Insert TelerikDataGrid]
-[Insert TelerikDataForm]
-[Insert TelerikGaugesListView]
-[Insert TelerikRating]
-[Insert TelerikSegmented]
-[Insert TelerikSideDrawer]
-[Insert TelerikTabView]
+![](https://i.imgur.com/g6hoUHh.png)
+
+![](https://i.imgur.com/NafDb2N.png)
+
+![](https://i.imgur.com/MVFJfME.png)
+
+![](https://i.imgur.com/gVV2Alk.png)
+
+![](https://i.imgur.com/2wJ6iFo.png)
+
+![](https://i.imgur.com/kDcrW2g.png)
+
+![](https://i.imgur.com/qlQht3B.png)
+
+![](https://i.imgur.com/Z6GhWu7.png)
+
+![](https://i.imgur.com/jb7aKLM.png)
+
+![](https://i.imgur.com/fRY6mkt.png)
 
 ## Better Windows Apps with UWP
 
@@ -320,7 +412,7 @@ Windows 10 represents a significant milestone for Windows as a platform for both
 
 UWP represents an exciting opportunity as it allows developers to target a rich ecosystem of Windows-based devices through a unified API. It achieves a long-standing goal at Microsoft of having one -- and only one -- version of Windows to target. Through this unified API, developers can now build applications that can run across devices.
 
-![](https://i.imgur.com/68VLh89.png)
+![](https://i.imgur.com/l9c7npS.png)
 
 Not all devices are the same. Some support capabilities that are unique. UWP supports the ability to target these capabilities through Extension SDKs. These are device-specific APIs that can be targeted by developers to take advantage of these features.
 
