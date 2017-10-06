@@ -252,7 +252,7 @@ Here is what ASP.NET Core 2.0 project templates put out for a Razor Pages projec
 
 Let's look at a simple Razor Page view - a CSHTML file with a @page directive on top:
 
-```c#
+```ASP
 @page
 
 @model AboutModel
@@ -293,7 +293,7 @@ Notice how the model implements a PageModel - a base class that binds together m
 
 Now, here's a little variation to defining a PageModel for a Razor Page - this time in the View itself:
 
-```c#
+```ASP
 @page
 @model ContactModel
 @using Microsoft.AspNetCore.Mvc.RazorPages
@@ -321,7 +321,7 @@ Now, here's a little variation to defining a PageModel for a Razor Page - this t
 
 <address>
   <strong>Support:</strong> <a href="mailto:support@example.com">support@example.com</a><br />
-  <strong>Marketing:</strong> <a href="mailto:marketing@example.com>marketing@example.com</a>
+  <strong>Marketing:</strong> <a href="mailto:marketing@example.com">marketing@example.com</a>
 </address>
 ```
 
