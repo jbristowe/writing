@@ -57,8 +57,8 @@ The various .NET implementations target specific versions of .NET Standard. Each
 
 You can get a glimpse of the different implementations of .NET and their support of corresponding .NET Standard versions - things are moving along nicely. All this means more portability of .NET code and libraries for developers - reuse all things from a developer's perspective.
 
-| Implementation | | | | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Implementation | | | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | .NET Standard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 | 2.0 |
 | .NET Core | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2.0 |
 | .NET Framework (with .NET Core 1.x SDK) | 4.5 | 4.5 | 4.5.1 | 4.6 | 4.6.1 | 4.6.2 | | |
