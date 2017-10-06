@@ -57,16 +57,29 @@ The various .NET implementations target specific versions of .NET Standard. Each
 
 You can get a glimpse of the different implementations of .NET and their support of corresponding .NET Standard versions - things are moving along nicely. All this means more portability of .NET code and libraries for developers - reuse all things from a developer's perspective.
 
-| Implementation | | | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| .NET Standard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 | 2.0 |
-| .NET Core | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2.0 |
-| .NET Framework (with .NET Core 1.x SDK) | 4.5 | 4.5 | 4.5.1 | 4.6 | 4.6.1 | 4.6.2 | | |
-| .NET Framework (with .NET Core 2.0 SDK) | 4.5 | 4.5 | 4.5.1 | 4.6 | 4.6.1 | 4.6.1 | 4.6.1 | 4.6.1 |
-| Mono | 4.6 | 4.6 | 4.6 | 4.6 | 4.6 | 4.6 | 4.6 | 5.4 |
-| Xamarin.iOS | 10.0 | 10.0 | 10.0 | 10.0 | 10.0 | 10.0 | 10.0 | 10.14 |
-| Xamarin.Mac | 3.0 | 3.0 | 3.0 | 3.0 | 3.0 | 3.0 | 3.0 | 3.8 |
-| Xamarin.Android | 7.0 | 7.0 | 7.0 | 7.0 | 7.0 | 7.0 | 7.0 | 7.5 |
+|.NET Standard|[1.0]|[1.1]|[1.2]|[1.3]|[1.4]|[1.5]|[1.6]|    [2.0]|
+|:-------------------------------------|---------:|------:|--------:|-------:|--------:|----------------:|--------------:|---------:|
+|.NET Core|1.0|1.0|1.0|1.0|1.0|1.0|**1.0**|**2.0**|
+|.NET Framework|4.5|**4.5**|**4.5.1**|**4.6**|4.6.1|4.6.1|4.6.1|**4.6.1**|
+|Mono|4.6|4.6|4.6|4.6|4.6|4.6|**4.6**|**5.4**|
+|Xamarin.iOS|10.0|10.0|10.0|10.0|10.0|10.0|**10.0**|**10.14**|
+|Xamarin.Mac|3.0|3.0|3.0|3.0|3.0|3.0|**3.0**|**3.8**|
+|Xamarin.Android|7.0|7.0|7.0|7.0|7.0|7.0|**7.0**|**8.0**|
+|Universal Windows Platform|10.0|10.0|10.0|10.0|**10.0**|vNext|vNext|**vNext**|
+|Windows|8.0|**8.0**|**8.1**||||||
+|Windows Phone|8.1|8.1|**8.1**||||||
+|Windows Phone Silverlight|**8.0**||||||||
+
+[1.0]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.0.md
+[1.1]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.1.md
+[1.2]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.2.md
+[1.3]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.3.md
+[1.4]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4.md
+[1.5]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.5.md
+[1.6]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.6.md
+[2.0]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md
+
+Note: Bold text indicates when a .NET implementation added support for a given .NET Standard version.
 
 The common APIs for the .NET Framework and Xamarin were used as a basis for .NET Standard. With .NET Standard 2.0, this surface extends across the .NET ecosystem forming a Base Class Library of over 32000 APIs. These additions make it much easier to port existing code over to .NET Standard - there are API analyzers to help developers bring their code over to be .NET Standards comliant. Since .NET Standard acts as a BCL API definition, additional Framework Class Libraries can provide platform specific functionality - on top of their support for a specific .NET Standard version. Because of this moving, existing applications to frameworks that use .NET Standard implementations gets much easier.
 
