@@ -192,7 +192,19 @@ The ASP.NET team has created one of the most streamlined ASP.NET application arc
 
 One of the nicest things about .NET Core 2.0 and ASP.NET Core 2.0 for developers is portability - the framework and tooling is consistent across all platforms. Developers' choice of development OS does not matter - Windows and Mac have an identical experience. Gone is the ASP.NET specific Project.json file for dependencies and configuration - the familiar .CSProj file is back, as shown below for a boilerplate ASP.NET Core 2.0 project. Whether the ASP.NET project is scaffolded from Visual Studio File | New Project or through the dotnet new CLI tools, the resulting project has the same exact .CSProj file - it simply points to the target runtime framework and pulls in the .NET dependencies. This also means that developers can collaborate easier and have ASP.NET projects be portable across machines. It is perfectly conceivable to have multiple developers work on the same ASP.NET project, but using different IDEs - one on Visual Studio on Windows, one on Visual Studio for Mac and yet others, on simple text editors. The .SLN and .CSProj files are perfectly portable and the code writing experience is the same everywhere.  
 
-![](https://i.imgur.com/OIxIdSy.png)
+```xml
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+</Project>
+```
 
 ### Easy Bootstrapping
 
