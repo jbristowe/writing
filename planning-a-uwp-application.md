@@ -1,12 +1,45 @@
 # Planning a UWP Application
 
-The [Universal Windows Platform](https://docs.microsoft.com/en-au/windows/uwp/get-started/universal-application-platform-guide) (UWP) offers an exciting opportunity for developers to target a rich ecosystem of Windows-based devices through a unified API. This whitepaper will help you plan the development of a UWP application by documenting the libraries, frameworks, and tools that are available to developers.
+The [Universal Windows Platform][1] (UWP) offers an exciting opportunity for developers to target a rich ecosystem of Windows-based devices through a unified API. This whitepaper will help you plan the development of a UWP application by documenting the libraries, frameworks, and tools that are available to developers.
+
+## Why UWP?
+
+![](https://i.imgur.com/JWQXJL6.png)
+
+### Modern Experiences
+
+UWP enables developers to build modern user experiences through an adaptive interfaces. This is coupled with a rich set of APIs that support natural user inputs such as touch and ink.
+
+### New Audiences
+
+UWP unlocks the potential to reach new audiences by providing the ability to target a variety of devices, including the Surface Hub and HoloLens.
+
+### Increased Engagement
+
+### Improved Servicing
+
+## Migrating Existing Applications to UWP
+
+|||
+|-|-|
+|Windows Forms (WinForms)|Continue development|
+|Windows Presentation Framework (WPF)|Continue development|
+|Windows 10 APIs|Modern and Engaging Experiences|
+|Desktop Bridge|Improved Discoverability, Installation, and Servicing|
+|Universal Windows App|Reach New Audiences and Devices|
+|Xamarin Forms|Reach New Audiences and Platforms|
+
+The Desktop Bridge
+
+## Devices
+
+For a list of compatible barcode scanners, see [Supported Point of Service Peripherals](https://docs.microsoft.com/windows/uwp/devices-sensors/pos-device-support). 
 
 ## Accessibility
 
 ### Accessbility Testing Tools in the Windows SDK
 
-The Windows Software Development Kit (SDK) provides a number of excellent tools that can be used to test the accessibility of UWP applications.
+The [Windows Software Development Kit][2] (SDK) provides a number of excellent tools that can be used to test the accessibility of UWP applications.
 
 #### Accessible Event Watcher (AccEvent)
 
@@ -96,7 +129,7 @@ The [UWP Community Toolkit](https://github.com/Microsoft/UWPCommunityToolkit) pr
 
 ### Telerik UI for UWP
 
-[Telerik UI for UWP](https://github.com/telerik/UI-For-UWP) is an open source project on GitHub that provides 20+ UI controls for data management, layout, scheduling, editors, navigation, data visualisation, and interactivity.
+[Telerik UI for UWP][3] is an open source project on GitHub that provides 20+ UI controls for data management, layout, scheduling, editors, navigation, data visualisation, and interactivity.
 
 ![](https://i.imgur.com/YRDboei.png)
 
@@ -152,3 +185,7 @@ Automated deployment and the build management tasks that are associated with thi
 ## Notes
 
 * [MahApps.Metro.IconPacks]() ([GitHub](https://github.com/MahApps/MahApps.Metro.IconPacks))
+
+[1]: https://en.wikipedia.org/wiki/Universal_Windows_Platform
+[2]: https://en.wikipedia.org/wiki/Microsoft_Windows_SDK
+[3]: https://www.telerik.com/universal-windows-platform-ui
