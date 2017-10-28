@@ -4,19 +4,13 @@ The [Universal Windows Platform][1] (UWP) offers an exciting opportunity for dev
 
 ## Why UWP?
 
+UWP provides the best platform to developers targeting its 400+ million Windows 10 users. It enables developers to build applications that can leverage modern experiences through devices that extend beyond the PC, such as the Xbox and HoloLens.
+
 ![](https://i.imgur.com/JWQXJL6.png)
 
-### Modern Experiences
+In addition to these devices, UWP applications can leverage a rich programmatic interfaces through .NET, Win32, and UWP APIs. This platform is facilitated through the Microsoft Store.
 
-UWP enables developers to build modern user experiences through an adaptive interfaces. This is coupled with a rich set of APIs that support natural user inputs such as touch and ink.
-
-### New Audiences
-
-UWP unlocks the potential to reach new audiences by providing the ability to target a variety of devices, including the Surface Hub and HoloLens.
-
-### Increased Engagement
-
-### Improved Servicing
+UWP is a compelling because it provides a platform of new or improved capabilities. It enables developers to build modern user experiences through an adaptive interfaces. This is coupled with a rich set of APIs that support natural user inputs such as touch and ink. It unlocks the potential to reach new audiences by providing the ability to target a variety of devices, including the Surface Hub and HoloLens. It provides much improved servicing experience for applications through its modern installer. Applications are now deployed to Windows 10 as AppX packages. These are self-describing in terms of permissions and capabilities. These packages are provided through the curated experience of the Microsoft Store (or private alternatives).
 
 ## Migrating Existing Applications to UWP
 
