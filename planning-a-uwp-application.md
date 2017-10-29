@@ -8,13 +8,23 @@ UWP provides the best platform to developers targeting its 400+ million Windows 
 
 ![](https://i.imgur.com/JWQXJL6.png)
 
-In addition to these devices, UWP applications can leverage a rich programmatic interfaces through .NET, Win32, and UWP APIs. This platform is facilitated through the Microsoft Store.
+In addition to these devices, UWP applications can leverage a rich programmatic interfaces through .NET, Win32, and UWP APIs. This platform is facilitated through the Microsoft Store and the Microsoft Store for Business.
 
 UWP is a compelling because it provides a platform of new or improved capabilities. It enables developers to build modern user experiences through an adaptive interfaces. This is coupled with a rich set of APIs that support natural user inputs such as touch and ink. It unlocks the potential to reach new audiences by providing the ability to target a variety of devices, including the Surface Hub and HoloLens. It provides much improved servicing experience for applications through its modern installer. Applications are now deployed to Windows 10 as Windows App packages (AppX). These are self-describing in terms of permissions and capabilities. These packages are provided through the curated experience of the Microsoft Store (or private alternatives).
 
 ## Migrating Existing Applications to UWP
 
-When planning a UWP application, you don't need to start from scratch. Indeed, a wide variety of approaches exist. You can preserve the investments you've made into technologies like Windows Forms (WinForms) or the Windows Presentation Foundation (WPF) by migrating your application over to UWP. Technologies such the Desktop Bridge enable you to distribute applications built with technologies like these as Windows App packages. Not only do you gain the benefits of an improved servicing model, you can also extend out its capabilities through UWP features like a XAML-based UI, background tasks, and more.
+When planning a UWP application, you don't need to start from scratch. Indeed, a wide variety of approaches exist. You can preserve the investments you've made into technologies like Win32, Windows Forms (WinForms), or the Windows Presentation Foundation (WPF) by migrating your application over to UWP. Technologies such the [Desktop Bridge][4] enable you to distribute applications built with technologies like these as Windows App packages. Not only do you gain the benefits of an improved servicing model, you can also extend out its capabilities through UWP features like a XAML-based UI, background tasks, and more.
+
+### Desktop Bridge
+
+The Desktop Bridge represents a great opportunity for developers wanting to leverage UWP in existing applcations and make them available through the Store or the Store for Business. It's infrastructure that's built into UWP that enables applications built with Win32, Windows Forms, or WPF.
+
+Microsoft has [published a list of things to know before you package your application and use the Desktop Bridge](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-prepare).
+
+### Desktop App Converter
+
+Microsoft provides a number of tools to help you migrate your existing applications to UWP. The [Desktop App Converter](https://aka.ms/converter) (DAC) is a command-line tool available through the Microsoft Store that will package your application into a Windows app package. The DAC can also build Windows app packages based on applications that have an installer (i.e. foo.msi). Despite its name, the DAC doesn't "convert" your application during this process. In fact, it remains unchanged.
 
 ## Devices
 
@@ -174,3 +184,4 @@ Automated deployment and the build management tasks that are associated with thi
 [1]: https://en.wikipedia.org/wiki/Universal_Windows_Platform
 [2]: https://en.wikipedia.org/wiki/Microsoft_Windows_SDK
 [3]: https://www.telerik.com/universal-windows-platform-ui
+[4]: https://developer.microsoft.com/en-us/windows/bridges/desktop
