@@ -64,11 +64,7 @@ The Device Portal for Desktop provides a number of diagnostic tools that are par
 
 ## Building Adaptive UWP Applications
 
-Developers should consider supporting the following classifications of adaptive UWP applications during development:
-
-1. Responsive user interface
-2. Version adaptive
-3. Platform adaptive
+When planning a UWP application, it's important for developers consider building UWP applications that adapt to the device family they run on. To be adaptive, developers should design for the user interface that will render across a wide range of screens. These screens can vary widely in terms of resolution, DPI density, and so on. Developers should also design for the version of Windows 10 that these applications are running on. As Windows 10 evolves, more and more capabilities are added. An adaptive application can incorporate version-specific features available from the underlying operating system and exposed through UWP APIs. This concept of being adaptive also applies to the platform that these UWP applications are running on. The good news is that developers can build UWP applications that detect the presence of these platforms and the APIs they expose. If they are present at run-time, the application can take advantage of them.
 
 ### Responsive User Interface
 
@@ -78,11 +74,11 @@ UWP supports the concept of a VisualStateManager that allows applications to res
 
 ### Version Adaptive
 
-UWP applications are said to be version adaptive if they are built with the capability of supporting multiple versions of Windows 10. This means that these applications are able to operate normally on a minimum version of the APIs that are available through a particular version of Windows 10. It also means that these applications can incorporate features added to APIs from later versions of Windows 10. Both of these abilities are facilitated through the configuration of a UWP project in Visual Studio as well as version adaptive code and conditional XAML.
+UWP applications are version-adaptive if they are built with the capability of supporting multiple versions of Windows 10. This means that these applications are able to operate normally on a minimum version of the APIs that are available through a particular version of Windows 10. It also means that these applications can incorporate features added to APIs from later versions of Windows 10. Both of these abilities are facilitated through the configuration of a UWP project in Visual Studio as well as version adaptive code and conditional XAML.
 
 ### Platform Adaptive
 
-UWP applications are said to be platform adaptive if they are built to incorporate features for each device family it supports.
+UWP applications platform-adaptive if they are built to incorporate features for each device family it supports. These capabilities are exposed through extension SDKs that you can incorporate into your application project. It's important that developers test the presence of the APIs exposed by the platform before executing calls against them.
 
 ## UI Libraries
 
