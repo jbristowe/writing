@@ -22,10 +22,6 @@ When planning to build a UWP application, you don't need to start from scratch. 
 
 Microsoft provides a number of tools to help you migrate your existing applications to UWP. The [Desktop App Converter](https://aka.ms/converter) (DAC) is a command-line tool available through the Microsoft Store that will convert your application installer into a Windows app package. It accomplishes this by recording all system modifications made by your installer and creating a corresponding Universal Windows Package for your application. This is done independently of your application. That means you can create these packages for applications built with technologies like Visual Basic 6, WPF, and Electron. Once you've converted your installer, you can enhance your existing application by leveraging UWP APIs or adding new resources to the Universal Windows Package. From there, you can migrate parts of your existing application to UWP to take advantage of modern features like a XAML-based UI or ink support. Over time, you can migrate your code fully to UWP to reach Windows 10 devices like the HoloLens and Xbox.
 
-## Devices
-
-For a list of compatible barcode scanners, see [Supported Point of Service Peripherals](https://docs.microsoft.com/windows/uwp/devices-sensors/pos-device-support). 
-
 ## Accessibility
 
 ### Accessbility Testing Tools in the Windows SDK
@@ -65,6 +61,10 @@ When building UWP applications, it's important to enable Developer Mode on the d
 ![](https://i.imgur.com/8INk4CV.png)
 
 Developers running on macOS can build applications for UWP in virtualised environments like [Oracle VirtualBox](https://www.virtualbox.org/), [VMware Fusion](https://www.vmware.com/products/fusion.html), and [Parallels Desktop](https://www.parallels.com/products/desktop/). Apple Boot Camp is a suitable alternative as well.
+
+## Devices
+
+For a list of compatible barcode scanners, see [Supported Point of Service Peripherals](https://docs.microsoft.com/windows/uwp/devices-sensors/pos-device-support).
 
 ### Windows Device Portal
 
