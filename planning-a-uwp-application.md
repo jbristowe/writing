@@ -8,7 +8,7 @@ UWP provides the best platform to developers targeting its 400+ million Windows 
 
 ![](https://i.imgur.com/JWQXJL6.png)
 
-In addition to these devices, UWP applications can leverage a rich programmatic interfaces through .NET, Win32, and UWP APIs. This platform is facilitated through the Microsoft Store and the Microsoft Store for Business.
+In addition to these devices, UWP applications can leverage a rich set of programmatic interfaces through .NET, Win32, and UWP APIs. These applications are made available through a trusted and curated experience of the [Microsoft Store][0]. Organizations can also choose to provide an internal channel for these applications through the Microsoft Store for Business and Microsoft Store for Education.
 
 UWP is a compelling because it provides a platform of new or improved capabilities. It enables developers to build modern user experiences through an adaptive interfaces. This is coupled with a rich set of APIs that support natural user inputs such as touch and ink. It unlocks the potential to reach new audiences by providing the ability to target a variety of devices, including the Surface Hub and HoloLens. It provides much improved servicing experience for applications through its modern installer. Applications are now deployed to Windows 10 as Windows App packages (AppX). This is the file format used for UWP applications that contains an application's assets and a description of its permissions/capabilities.
 
@@ -181,6 +181,7 @@ Automated deployment and the build management tasks that are associated with thi
 
 * [MahApps.Metro.IconPacks]() ([GitHub](https://github.com/MahApps/MahApps.Metro.IconPacks))
 
+[0]: https://microsoft.com/store/apps
 [1]: https://en.wikipedia.org/wiki/Universal_Windows_Platform
 [2]: https://en.wikipedia.org/wiki/Microsoft_Windows_SDK
 [3]: https://www.telerik.com/universal-windows-platform-ui
