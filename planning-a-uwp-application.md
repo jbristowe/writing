@@ -20,7 +20,7 @@ When planning to build a UWP application, you don't need to start from scratch. 
 
 ![](https://i.imgur.com/K8KlAwH.png)
 
-Microsoft provides a number of tools to help you migrate your existing applications to UWP. The [Desktop App Converter](https://aka.ms/converter) (DAC) is a command-line tool available through the Microsoft Store that will convert your application installer into a Windows app package. It accomplishes this by recording all system modifications made by your installer and creating a corresponding Universal Windows Package for your application. This is done independently of your application. That means you can create these packages for applications built with technologies like Visual Basic 6, WPF, and Electron. Once you've converted your installer, you can enhance your existing application by leveraging UWP APIs or adding new resources to the Universal Windows Package. From there, you can migrate parts of your existing application to UWP to take advantage of modern features like a XAML-based UI or ink support. Over time, you can migrate your code fully to UWP to reach Windows 10 devices like the HoloLens and Xbox.
+Microsoft provides a number of tools to help you migrate your existing applications to UWP. The [Desktop App Converter](https://aka.ms/converter) (DAC) is a command-line tool available through the Microsoft Store that will convert your application installer into a Windows app package. It accomplishes this by recording all system modifications made by your installer and creating a corresponding Universal Windows Package for your application. This is done independently of your application. That means you can create these packages for applications built with technologies like Visual Basic 6, WPF, and [Electron](https://electron.atom.io/). Once you've converted your installer, you can enhance your existing application by leveraging UWP APIs or adding new resources to the Universal Windows Package. From there, you can migrate parts of your existing application to UWP to take advantage of modern features like a XAML-based UI or ink support. Over time, you can migrate your code fully to UWP to reach Windows 10 devices like the HoloLens and Xbox.
 
 ## UWP Application Development Requirements
 
@@ -34,9 +34,11 @@ When building UWP applications, it's important to enable Developer Mode on the d
 
 Developers running on macOS can build applications for UWP in virtualised environments like [Oracle VirtualBox](https://www.virtualbox.org/), [VMware Fusion](https://www.vmware.com/products/fusion.html), and [Parallels Desktop](https://www.parallels.com/products/desktop/). Apple Boot Camp is a suitable alternative as well.
 
-## Devices
+## Interactions and Devices
 
-For a list of compatible barcode scanners, see [Supported Point of Service Peripherals](https://docs.microsoft.com/windows/uwp/devices-sensors/pos-device-support).
+Microsoft has made a considerable effort to document the kinds of interactions and devices you can target when building UWP applications. User interactions are those that incorporate actions from connected peripherals that extend beyond the keyboard and mouse. These include pen, touch, speech, gesture, and so on. They also cover specific devices like the Surface Dial, which is supported in UWP. User interactions and devices are important to consider when planning your UWP application. That's because UWP scans a large range of device families with differing forms of user control. Take, for example, the HoloLens. This is a device that has a unique set of gestures that are coupled with a user interface that augments the user's reality. In this scenario, UWP provides support through speech commands, gestures, and input from an on-screen keyboard.
+
+It's important to consider the device families you wish to target when planning a UWP application. Windows 10 covers a wide range of devices, each with its own capabilities and constraints. These characteristics are particularly important when designing the user experience (see "Building Adaptive UWP Applications" for more information). For other scenarios, UWP provides integration with a wide range of input devices. For example, see [Supported Point of Service Peripherals](https://docs.microsoft.com/windows/uwp/devices-sensors/pos-device-support) for list of compatible barcode scanners.
 
 ### Windows Device Portal
 
