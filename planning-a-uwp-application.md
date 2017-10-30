@@ -40,9 +40,11 @@ Microsoft has made a considerable effort to document the kinds of interactions a
 
 It's important to consider the device families you wish to target when planning a UWP application. Windows 10 covers a wide range of devices, each with its own capabilities and constraints. These characteristics are particularly important when designing the user experience (see "Building Adaptive UWP Applications" for more information). For other scenarios, UWP provides integration with a wide range of input devices. For example, see [Supported Point of Service Peripherals](https://docs.microsoft.com/windows/uwp/devices-sensors/pos-device-support) for list of compatible barcode scanners.
 
+Tools like Visual Studio provide an integrated debugging experience that allows you to be effective when targeting devices. This is complemented by the Windows Device Portal to help developers during the development process.
+
 ### Windows Device Portal
 
-The Windows Device Portal (WDP) is a new feature that' s available to developers on each device family. In addition to providing the ability to remote manage a device, it also provides a set of diagnostic tools to aid UWP application development.
+The Windows Device Portal (WDP) is a new feature that's available to developers on each device family. In addition to providing the ability to remote manage a device, it also provides a set of diagnostic tools to aid UWP application development.
 
 ![](https://i.imgur.com/fhwspXw.png)
 
