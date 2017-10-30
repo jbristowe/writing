@@ -22,34 +22,6 @@ When planning to build a UWP application, you don't need to start from scratch. 
 
 Microsoft provides a number of tools to help you migrate your existing applications to UWP. The [Desktop App Converter](https://aka.ms/converter) (DAC) is a command-line tool available through the Microsoft Store that will convert your application installer into a Windows app package. It accomplishes this by recording all system modifications made by your installer and creating a corresponding Universal Windows Package for your application. This is done independently of your application. That means you can create these packages for applications built with technologies like Visual Basic 6, WPF, and Electron. Once you've converted your installer, you can enhance your existing application by leveraging UWP APIs or adding new resources to the Universal Windows Package. From there, you can migrate parts of your existing application to UWP to take advantage of modern features like a XAML-based UI or ink support. Over time, you can migrate your code fully to UWP to reach Windows 10 devices like the HoloLens and Xbox.
 
-## Accessibility
-
-### Accessbility Testing Tools in the Windows SDK
-
-The [Windows Software Development Kit][2] (SDK) provides a number of excellent tools that can be used to test the accessibility of UWP applications.
-
-#### Accessible Event Watcher (AccEvent)
-
-This tool can be used to track the events raised by UI elements within an application.
-
-![](https://i.imgur.com/4hQ4k7U.png)
-
-#### UI Accessibility Checker (AccChecker)
-
-A tool that verifies that key UI accessibility requirements are met in the design and implementation of UI Automation (UIA) or Microsoft Active Accessibility (MSAA) regardless of the underlying UI framework.
-
-![](https://i.imgur.com/8RXQYNx.png)
-
-#### Inspect Object (Inspect.exe)
-
-A tool that allows you to select any UI element and view its accessibility data.
-
-#### UI Automation Verify
-
-![](https://i.imgur.com/5sgm71l.png)
-
-Testing framework for manual and automated testing the implementation of Microsoft UI Automation by a control or application.
-
 ## UWP Application Development Requirements
 
 UWP application development is best suited for a system running the latest versions of Windows and Visual Studio. Namely, Windows 10 and Visual Studio 2017. While earlier versions of Windows and Visual Studio can be used, their ability to run, debug, and/or test UWP applications can be quite limited.
@@ -169,6 +141,34 @@ Windows Template Studio will generate UWP applications based upon the attribute 
 ## Automated Deployments of UWP Applications
 
 Automated deployment and the build management tasks that are associated with this process serve the role of automating the process of generating builds, deploying to test machines, and executing tests. They are a crucial aspect of having an efficient development process. When it comes to UWP application development, there are a number of solutions are available to manage builds and automate their associated tasks.
+
+## Accessibility
+
+### Accessbility Testing Tools in the Windows SDK
+
+The [Windows Software Development Kit][2] (SDK) provides a number of excellent tools that can be used to test the accessibility of UWP applications.
+
+#### Accessible Event Watcher (AccEvent)
+
+This tool can be used to track the events raised by UI elements within an application.
+
+![](https://i.imgur.com/4hQ4k7U.png)
+
+#### UI Accessibility Checker (AccChecker)
+
+A tool that verifies that key UI accessibility requirements are met in the design and implementation of UI Automation (UIA) or Microsoft Active Accessibility (MSAA) regardless of the underlying UI framework.
+
+![](https://i.imgur.com/8RXQYNx.png)
+
+#### Inspect Object (Inspect.exe)
+
+A tool that allows you to select any UI element and view its accessibility data.
+
+#### UI Automation Verify
+
+![](https://i.imgur.com/5sgm71l.png)
+
+Testing framework for manual and automated testing the implementation of Microsoft UI Automation by a control or application.
 
 ### VSTS
 ### Octopus Deploy
