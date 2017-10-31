@@ -92,6 +92,16 @@ UWP applications platform-adaptive if they are built to incorporate features for
 
 UI libraries save developers time by providing pre-built controls that can be incorporated into applications. There are many open source and commercial UI libraries available for developers building UWP applications.
 
+### XAML Controls
+
+There are many core controls available in UWP that developers can use to build applications. An effective way to experience them is through the XAML Controls Gallery application that's available on the Microsoft Store:
+
+![](https://i.imgur.com/AvlXptX.png)
+
+This application provides demos and code samples that you can incorporate into your project:
+
+![](https://i.imgur.com/jaxzb7k.png)
+
 ### UWP Community Toolkit
 
 The [UWP Community Toolkit](https://github.com/Microsoft/UWPCommunityToolkit) provides a set of developer tools, code helpers, UI controls, application services, and notifications for UWP developers. It serves as collaboration between Microsoft and the UWP developer community and it is available as an open source project on GitHub.
