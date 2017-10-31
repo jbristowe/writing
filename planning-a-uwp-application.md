@@ -164,6 +164,8 @@ These controls are easy to integrate into UWP applications through NuGet.
 
 Windows Template Studio will generate UWP applications based upon the attribute sets you specify. These attribute sets determine the various characteristics of the application such as its UI navigation style, supporting frameworks, application pages, and Windows 10 features.
 
+![](https://i.imgur.com/Ffoj4T9.png)
+
 ## Automated Deployments of UWP Applications
 
 Automated deployment and the build management tasks that are associated with this process serve the role of automating the process of generating builds, deploying to test machines, and executing tests. They are a crucial aspect of having an efficient development process. When it comes to UWP application development, there are a number of solutions are available to manage builds and automate their associated tasks.
