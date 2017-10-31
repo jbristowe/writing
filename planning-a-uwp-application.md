@@ -118,6 +118,10 @@ The UWP Community Tookit application is incredibly useful because it allows you 
 
 ![](https://i.imgur.com/YRDboei.png)
 
+These controls are easy to integrate into UWP applications through NuGet.
+
+![](https://i.imgur.com/hnxbXfn.png)
+
 ### ReactiveUI
 
 [ReactiveUI](https://github.com/reactiveui/ReactiveUI) provides a composable and functional reactive model-view-viewmodel framework for .NET (including UWP).
