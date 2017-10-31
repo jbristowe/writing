@@ -72,6 +72,14 @@ Since UWP applications have the ability to operate across a range of device fami
 
 UWP supports the concept of a VisualStateManager that allows applications to respond to changes in its appearance. These changes can be triggered when running an the application on devices from small screens to large screens or no screens at all. Tools like Visual Studio 2017 complement this capability by providing the ability to preview how an application will look on a range of device families at design-time.
 
+Microsoft provides excellent tools for building the user interface of a UWP application. Visual Studio provides an integrated experience that allows you switch screen resolutions and observe how these changes impact your user interface.
+
+![](https://i.imgur.com/7hIu9hN.png)
+
+Another useful tool is [Adobe Experience Design][5] (XD). This is a tool you can use to design the user interface of mobile and desktop applications. Microsoft provides a design toolkit that allows you to incorporate core UWP controls.
+
+![](https://i.imgur.com/kSaQxoK.png)
+
 ### Version Adaptive
 
 UWP applications are version-adaptive if they are built with the capability of supporting multiple versions of Windows 10. This means that these applications are able to operate normally on a minimum version of the APIs that are available through a particular version of Windows 10. It also means that these applications can incorporate features added to APIs from later versions of Windows 10. Both of these abilities are facilitated through the configuration of a UWP project in Visual Studio as well as version adaptive code and conditional XAML.
@@ -182,3 +190,4 @@ Testing framework for manual and automated testing the implementation of Microso
 [2]: https://en.wikipedia.org/wiki/Microsoft_Windows_SDK
 [3]: https://www.telerik.com/universal-windows-platform-ui
 [4]: https://developer.microsoft.com/en-us/windows/bridges/desktop
+[5]: https://adobe.com/products/xd.html
