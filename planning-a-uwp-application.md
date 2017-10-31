@@ -139,6 +139,8 @@ These controls are easy to integrate into UWP applications through NuGet.
 
 ![](https://i.imgur.com/hnxbXfn.png)
 
+Like the UWP Community Toolkit, the source code for these controls are available on GitHub: [Telerik UI for UWP](https://github.com/telerik/UI-For-UWP).
+
 ### Template 10
 
 [Template 10](https://github.com/Windows-XAML/Template10) is a set of Visual Studio project templates for common patterns in UWP applications. It is similar to the [UWP Community Toolkit](https://github.com/Microsoft/UWPCommunityToolkit) in that it provides a set of controls, behaviours, services, converters, and more.
