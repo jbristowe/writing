@@ -106,6 +106,10 @@ This application provides demos and code samples that you can incorporate into y
 
 The [UWP Community Toolkit](https://github.com/Microsoft/UWPCommunityToolkit) provides a set of developer tools, code helpers, UI controls, application services, and notifications for UWP developers. It serves as collaboration between Microsoft and the UWP developer community and it is available as an open source project on GitHub.
 
+![](https://i.imgur.com/Y6AUEzq.png)
+
+The UWP Community Tookit application is incredibly useful because it allows you to manipulate properties on highlighted controls to see the impact of changes:
+
 ![](https://i.imgur.com/folHRrK.png)
 
 ### Telerik UI for UWP
