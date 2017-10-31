@@ -139,25 +139,19 @@ These controls are easy to integrate into UWP applications through NuGet.
 
 ![](https://i.imgur.com/hnxbXfn.png)
 
+### Template 10
+
+[Template 10](https://github.com/Windows-XAML/Template10) is a set of Visual Studio project templates for common patterns in UWP applications. It is similar to the [UWP Community Toolkit](https://github.com/Microsoft/UWPCommunityToolkit) in that it provides a set of controls, behaviours, services, converters, and more.
+
 ### ReactiveUI
 
 [ReactiveUI](https://github.com/reactiveui/ReactiveUI) provides a composable and functional reactive model-view-viewmodel framework for .NET (including UWP).
 
 ![](https://i.imgur.com/e0DMQJ6.png)
 
-### UICompositionAnimations
-
-[UICompositionAnimations](https://github.com/Sergio0694/UICompositionAnimations) exposes classes and APIs to quickly implement animations and effects to a UWP application. It also has a collection of helper methods to load Win2D images, dispatch code to the UI thread and more.
-
-### Template 10
-
-[Template 10](https://github.com/Windows-XAML/Template10) is a set of Visual Studio project templates for common patterns in UWP applications. It is similar to the [UWP Community Toolkit](https://github.com/Microsoft/UWPCommunityToolkit) in that it provides a set of controls, behaviours, services, converters, and more.
-
 ### Caliburn.Micro
 
 [Caliburn.Micro](http://caliburnmicro.com/) ([GitHub](https://github.com/Caliburn-Micro/Caliburn.Micro))
-
-### Prism
 
 ### OxyPlot
 
@@ -166,10 +160,6 @@ These controls are easy to integrate into UWP applications through NuGet.
 ### LiveCharts
 
 [LiveCharts](https://github.com/beto-rodriguez/Live-Charts) provides simple, flexible, interactive & powerful charts, maps and gauges for .NET.
-
-## .NET Core
-
-* .NET Core vs Portable Class Libraries (PCLs)
 
 ## Tools
 
@@ -189,38 +179,21 @@ Automated deployment and the build management tasks that are associated with thi
 
 ## Accessibility
 
-### Accessbility Testing Tools in the Windows SDK
+The [Windows Software Development Kit][2] (SDK) provides a number of excellent tools that can be used to test the accessibility of UWP applications. These tools can be used to track events, verify accessibility requirements, and probe accessbility-based data.
 
-The [Windows Software Development Kit][2] (SDK) provides a number of excellent tools that can be used to test the accessibility of UWP applications.
-
-#### Accessible Event Watcher (AccEvent)
-
-This tool can be used to track the events raised by UI elements within an application.
+**Accessible Event Watcher (AccEvent)**: This tool can be used to track the events raised by UI elements within an application.
 
 ![](https://i.imgur.com/4hQ4k7U.png)
 
-#### UI Accessibility Checker (AccChecker)
-
-A tool that verifies that key UI accessibility requirements are met in the design and implementation of UI Automation (UIA) or Microsoft Active Accessibility (MSAA) regardless of the underlying UI framework.
+**UI Accessibility Checker (AccChecker)**: A tool that verifies that key UI accessibility requirements are met in the design and implementation of UI Automation (UIA) or Microsoft Active Accessibility (MSAA) regardless of the underlying UI framework.
 
 ![](https://i.imgur.com/8RXQYNx.png)
 
-#### Inspect Object (Inspect.exe)
+**Inspect Object (Inspect.exe)**: A tool that allows you to select any UI element and view its accessibility data.
 
-A tool that allows you to select any UI element and view its accessibility data.
-
-#### UI Automation Verify
+**UI Automation Verify**: Testing framework for manual and automated testing the implementation of Microsoft UI Automation by a control or application.
 
 ![](https://i.imgur.com/5sgm71l.png)
-
-Testing framework for manual and automated testing the implementation of Microsoft UI Automation by a control or application.
-
-### VSTS
-### Octopus Deploy
-
-## Notes
-
-* [MahApps.Metro.IconPacks]() ([GitHub](https://github.com/MahApps/MahApps.Metro.IconPacks))
 
 [0]: https://microsoft.com/store/apps
 [1]: https://en.wikipedia.org/wiki/Universal_Windows_Platform
