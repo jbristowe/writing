@@ -90,6 +90,21 @@ UWP applications are version-adaptive if they are built with the capability of s
 
 UWP applications platform-adaptive if they are built to incorporate features for each device family it supports. These capabilities are exposed through extension SDKs that you can incorporate into your application project. It's important that developers test the presence of the APIs exposed by the platform before executing calls against them.
 
+## Software management tools
+
+To manage the development of a UWP project, software management tools are required to manage code, assets, and team members' tasks:
+
+| Software management tools  | Examples |
+|---|---|
+|Issues and feature tracker  | TFS, GitHub  |
+|Version control system  | TFS, GitHub  | 
+|Document/asset storage  | Slack, internal network storage, O365 |
+|Team communication|Slack, HipChat, IRC, Skype|
+|Task manager| Visual Studio Team Services, GitHub Org Tasks, Trello|
+|Continuous Integration and Continuous Delivery| Visual Studio Team Services, Azure|
+ 
+It's important to ensure that developers adopt these tools. It's a vital part of frequently assessing and improving development workflows.
+
 ## UI Libraries
 
 UI libraries save developers time by providing pre-built controls that can be incorporated into applications. There are many open source and commercial UI libraries available for developers building UWP applications.
