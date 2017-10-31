@@ -105,7 +105,7 @@ To manage the development of a UWP project, software management tools are requir
  
 It's important to ensure that developers adopt these tools. It's a vital part of frequently assessing and improving development workflows.
 
-## UI Libraries
+## UI Libraries and Tools
 
 UI libraries save developers time by providing pre-built controls that can be incorporated into applications. There are many open source and commercial UI libraries available for developers building UWP applications.
 
@@ -143,26 +143,6 @@ These controls are easy to integrate into UWP applications through NuGet.
 
 [Template 10](https://github.com/Windows-XAML/Template10) is a set of Visual Studio project templates for common patterns in UWP applications. It is similar to the [UWP Community Toolkit](https://github.com/Microsoft/UWPCommunityToolkit) in that it provides a set of controls, behaviours, services, converters, and more.
 
-### ReactiveUI
-
-[ReactiveUI](https://github.com/reactiveui/ReactiveUI) provides a composable and functional reactive model-view-viewmodel framework for .NET (including UWP).
-
-![](https://i.imgur.com/e0DMQJ6.png)
-
-### Caliburn.Micro
-
-[Caliburn.Micro](http://caliburnmicro.com/) ([GitHub](https://github.com/Caliburn-Micro/Caliburn.Micro))
-
-### OxyPlot
-
-[OxyPlot](http://www.oxyplot.org/)
-
-### LiveCharts
-
-[LiveCharts](https://github.com/beto-rodriguez/Live-Charts) provides simple, flexible, interactive & powerful charts, maps and gauges for .NET.
-
-## Tools
-
 ### Windows Template Studio
 
 [Windows Template Studio](https://aka.ms/wtsinstall) is an extension for Visual Studio 2017 that will generate a UWP application through templates. It's a useful tool to  get you up and running quickly with a project structure and source files that can be modified afterward.
@@ -173,11 +153,7 @@ Windows Template Studio will generate UWP applications based upon the attribute 
 
 ![](https://i.imgur.com/Ffoj4T9.png)
 
-## Automated Deployments of UWP Applications
-
-Automated deployment and the build management tasks that are associated with this process serve the role of automating the process of generating builds, deploying to test machines, and executing tests. They are a crucial aspect of having an efficient development process. When it comes to UWP application development, there are a number of solutions are available to manage builds and automate their associated tasks.
-
-## Accessibility
+### Accessibility Tools
 
 The [Windows Software Development Kit][2] (SDK) provides a number of excellent tools that can be used to test the accessibility of UWP applications. These tools can be used to track events, verify accessibility requirements, and probe accessbility-based data.
 
