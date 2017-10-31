@@ -98,7 +98,7 @@ To manage the development of a UWP project, software management tools are requir
 |---|---|
 |Issues and feature tracker  | TFS, GitHub  |
 |Version control system  | TFS, GitHub  | 
-|Document/asset storage  | Slack, internal network storage, O365 |
+|Document/asset storage  | Slack, internal network storage, Office 365 |
 |Team communication|Slack, HipChat, IRC, Skype|
 |Task manager| Visual Studio Team Services, GitHub Org Tasks, Trello|
 |Continuous Integration and Continuous Delivery| Visual Studio Team Services, Azure|
