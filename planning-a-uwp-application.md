@@ -64,7 +64,7 @@ The [Device Portal for Desktop](https://docs.microsoft.com/en-us/windows/uwp/deb
 
 The Device Portal for Desktop provides a number of diagnostic tools that are particularly useful for UWP development. For example, you can manage packaged applications as well as view and manipulate files stored by your sideloaded apps. Features such as the ability to [debug UWP app streaming install](https://blogs.msdn.microsoft.com/appinstaller/2017/08/09/using-windows-device-portal-to-debug-streaming-install/) and simulating your device location were added to the Device Portal for Desktop in the Fall Creators Update.
 
-## Building Adaptive UWP Applications
+## Planning for Adaptive UWP Applications
 
 When planning a UWP application, it's important for developers consider building UWP applications that adapt to the device family they run on. To be adaptive, developers should design for the user interface that will render across a wide range of screens. These screens can vary widely in terms of resolution, DPI density, and so on. Developers should also design for the version of Windows 10 that these applications are running on. As Windows 10 evolves, more and more capabilities are added. An adaptive application can incorporate version-specific features available from the underlying operating system and exposed through UWP APIs. This concept of being adaptive also applies to the platform that these UWP applications are running on. The good news is that developers can build UWP applications that detect the presence of these platforms and the APIs they expose. If they are present at run-time, the application can take advantage of them.
 
