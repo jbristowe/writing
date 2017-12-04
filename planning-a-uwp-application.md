@@ -103,7 +103,7 @@ To manage the development of a UWP project, software management tools are requir
 |Task manager| Visual Studio Team Services, GitHub Org Tasks, Trello|
 |Continuous Integration and Continuous Delivery| Visual Studio Team Services, Azure|
  
-It's important to ensure that developers adopt these tools. It's a vital part of frequently assessing and improving development workflows.
+It's important to ensure that developers adopt these tools. It's a vital part of assessing and improving development workflows.
 
 ## UI Libraries and Tools
 
