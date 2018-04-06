@@ -112,8 +112,7 @@ CSS selectors dictate which elements to act on and these property values can be 
 As you expect, you can assign a CSS *style class* to XAML elements and define the style in your CSS file - in case of property value conflicts, the last style wins. Assume the following XAML:
 
 ```xml
-<Label Text="Welcome to Xamarin Forms!" 
-       StyleClass="MyLabel" />
+<Label Text="Welcome to Xamarin Forms!" StyleClass="MyLabel" />
 ```
 
 The `Label` has the `.MyLabel` class applied, which is as follows:
@@ -133,8 +132,7 @@ Here's how it works at runtime:
 You can refer to any XAML visual element by their generic name as CSS selectors, but you may also fall back to `x:Name` to identify individual elements out of the visual tree. For example, assume the following XAML:
 
 ```xml
-<Label x:Name="NamedLabel"
-       Text="Hello World" />
+<Label x:Name="NamedLabel" Text="Hello World" />
 ```
 
 You can map this `Label` to the is `Name` property through an ID selector in CSS:
@@ -180,7 +178,7 @@ Assume the following XAML:
              Orientation="Vertical"
              VerticalOptions="Center"
              HorizontalOptions="Center">
-  <Label Text="Welcome to Xamarin Forms!"  StyleClass="MyLabel" /> 
+  <Label Text="Welcome to Xamarin Forms!" StyleClass="MyLabel" /> 
   <Label x:Name="NamedLabel" Text="Hello World" />
 </StackLayout>
 ```
