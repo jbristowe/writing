@@ -4,7 +4,7 @@ This is the typical reaction from hardcore XAML enthusiasts when they're told th
 
 ## Why CSS?
 
-First up, if you are a hater of any web technologies, you need to give up the fight against bringing CSS support to Xamarin.Forms. It is happening. And although it's not in a stable Xamarin.Forms release yet, the [Pull Request has been merged into Master](https://github.com/xamarin/Xamarin.Forms/pull/1207) for a while now. The CSS parser is essentially a mapping back to [XAML styles](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/introduction) in use within Xamarin.Forms.
+First up, if you are a hater of any web technologies, you need to give up the fight against bringing CSS support to Xamarin.Forms. It is happening. And although it's not in a stable Xamarin.Forms release yet, the [pull request was merged into master in late 2017](https://github.com/xamarin/Xamarin.Forms/pull/1207). The CSS parser is essentially a mapping back to [XAML styles](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/introduction) in use within Xamarin.Forms.
 
 So, why would Microsoft even try to bring CSS goodness from the web world over to Xamarin.Forms? Turns out, there are some real advantages to being able to style native Xamarin.Forms apps with the ease that CSS provides. Here's an informal run down:
 
