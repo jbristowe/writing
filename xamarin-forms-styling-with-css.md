@@ -12,31 +12,31 @@ So, why would Microsoft even try to bring CSS goodness from the web world over t
 
 Here are a few benefits that CSS provides for styling Xamarin.Forms:
 
-- Essentially, both HTML for web and XAML for Xamarin.Forms build visual trees.
-- Many Xamarin developers come from an ASP.NET background.
-- CSS is powerful and well-loved by many.
-- Developers get to reuse skills they already have from building web apps.
-- There is a rich ecosystem of extensions and tooling around CSS.
-- Compared to XAML styling, CSS can be leaner and less verbose.
-- CSS is essentially providing a mapping back to underlying XAML styles.
-- All of inline XAML markup for styling can be moved to CSS files.
-- CSS offers some unique advantages with styling inheritance.
-- CSS offers the potential of code sharing of styles between web and Xamarin.Forms app.
-- CSS pre-processing and style templates are supported.
-- With [Mono's WebAssembly support](http://www.mono-project.com/news/2017/08/09/hello-webassembly/), XAML styling through CSS opens new doors.
-- CSS use is optional and developers don't complain about flexibility.
+- Essentially, both HTML for web and XAML for Xamarin.Forms build visual trees
+- Many Xamarin developers come from an ASP.NET background
+- CSS is powerful and well-loved by many
+- Developers get to reuse skills they already have from building web apps
+- There is a rich ecosystem of extensions and tooling around CSS
+- Compared to XAML styling, CSS can be leaner and less verbose
+- CSS is essentially providing a mapping back to underlying XAML styles
+- All of inline XAML markup for styling can be moved to CSS files
+- CSS offers some unique advantages with styling inheritance
+- CSS offers the potential of code sharing of styles between web and Xamarin.Forms app
+- CSS pre-processing and style templates are supported
+- With [Mono's WebAssembly support](http://www.mono-project.com/news/2017/08/09/hello-webassembly/), XAML styling through CSS opens new doors
+- CSS use is optional and developers don't complain about flexibility
 
 ### Some Caveats
 
 While the promise of CSS styling and code sharing can be enticing, it is important to remember that these are still early days. These are some things to keep in mind:
 
-- XAML styling is the first class citizen in Xamarin.Forms.
-- CSS plays a side role in providing a familiar approach to styling XAML elements.
-- One cannot do everything in CSS that is doable in XAML styling.
-- Some CSS features are not supported, like `[attribute^="value"]` and `@media`.
-- For now, stylesheets are parsed and evaluated at runtime; they are not compiled.
-- There is small performance hit as CSS is parsed and mapped back to XAML styles.
-- CSS styling support isn't official in Xamarin.Forms yet.
+- XAML styling is the first class citizen in Xamarin.Forms
+- CSS plays a side role in providing a familiar approach to styling XAML elements
+- One cannot do everything in CSS that is doable in XAML styling
+- Some CSS features are not supported, like `[attribute^="value"]` and `@media`
+- For now, stylesheets are parsed and evaluated at runtime; they are not compiled
+- There is small performance hit as CSS is parsed and mapped back to XAML styles
+- CSS styling support isn't official in Xamarin.Forms yet
 
 ### The Basics
 
