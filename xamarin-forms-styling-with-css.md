@@ -76,11 +76,11 @@ You may also load up the CSS as an embedded resource from C# code, but XAML is t
 }
 ```
 	
-The caret (^) symbol selects all elements with `ContentPage` as base class, including `ContentPage` itself. While the rest of CSS styling is the same as what you do for web, this is the only selector that isn't part of CSS specifications - this is special for Xamarin.Forms only. Have trust and run your app - you'll see that without changing anything in the default Xamarin.Forms template, we have CSS styling our `ContentPage`. One small line of code, one giant leap in code-sharing prospects!
+The caret symbol (`^`) selects all elements with `ContentPage` as base class, including `ContentPage` itself. While the rest of CSS styling is the same as what you do for web, this is the only selector that isn't part of CSS specifications - this is special for Xamarin.Forms only. Have trust and run your app - you'll see that without changing anything in the default Xamarin.Forms template, we have CSS styling our `ContentPage`. One small line of code, one giant leap in code-sharing prospects!
 
 ![](https://i.imgur.com/WId4QQb.png)
 
-Now the CSS file(s) in your Xamarin.Forms projects can be worked on any how you prefer - both Visual Studio for Windows and Mac will offer good support with IntelliSense. You are also free to use your beloved CSS tool. Except for the caret (^) symbol, it should be business as usual.
+Now the CSS file(s) in your Xamarin.Forms projects can be worked on any how you prefer - both Visual Studio for Windows and Mac will offer good support with IntelliSense. You are also free to use your beloved CSS tool. Except for the caret symbol (`^`), it should be business as usual.
 
 ## CSS Authenticity
 
