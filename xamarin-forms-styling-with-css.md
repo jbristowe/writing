@@ -122,7 +122,7 @@ The `Label` has the `.MyLabel` class applied, which is as follows:
 }
 ```
 
-Here's how it works at runtime:
+Here's how it looks at runtime:
 
 ![](https://i.imgur.com/YBbxWfd.png)
 
@@ -134,7 +134,7 @@ You can refer to any XAML visual element by their generic name as CSS selectors,
 <Label x:Name="NamedLabel" Text="Hello World" />
 ```
 
-You can map this `Label` to the is `Name` property through an ID selector in CSS:
+You can map this `Label` using its `Name` property through an ID selector in CSS:
 
 ```css
 #NamedLabel {
@@ -223,6 +223,6 @@ Easy, right?
 
 ## Road Ahead
 
-You may call it a bold outlier move, but CSS styling for Xamarin.Forms is here to stay. CSS brings to the table the ability to style XAML in a less verbose and more efficient way. And the biggest advantage is code sharing; between your web and Xamarin.Forms apps.
+You may call it a bold outlier move, but CSS styling for Xamarin.Forms is here to stay. CSS brings to the table the ability to style XAML in a less verbose and more efficient way. And the biggest advantage is code sharing between your web and Xamarin.Forms apps.
 
 It doesn't take a mind reader to guess your next set of questions. Now that we have CSS, could we take things to an advanced level and really reap the benefits? Could I be using CSS pre-processors like [Sass](http://sass-lang.com/) and [Less](http://lesscss.org/) in Xamarin.Forms styling and get productivity benefits? If I have a XAML style template, could I use CSS to modify it? I'm using [Telerik UI for Xamarin](https://www.telerik.com/xamarin-ui) for polished performant UI - could I style them with CSS or modify the [built-in theme](https://docs.telerik.com/devtools/xamarin/styling-and-appearance/xamarin-forms-theming/themes-overview)? The answer to all your questions is an emphatic YES! But for the risk of running TL;DR, we'll save this discussion for another article. Until then, stay classy and style your Xamarin.Forms apps just the way you like. Cheers!
