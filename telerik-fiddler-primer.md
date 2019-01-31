@@ -46,9 +46,9 @@ Some of the most common questions are of the form: *"Can I use Fiddler to accomp
 * Modify any request or response, either manually or automatically.
 * Decrypt HTTPS traffic to enable viewing and modification.
 * Store captured traffic to an archive and reload it later, even from a different computer.
-* "Play back" previously-captured responses to a client application, even if the server is offline.
-* Debug web traffic from most PCs and devices, including Mac/Linux systems, smart phones, and tablet computers.
-* Chain to upstream proxy servers, including the TOR network.
+* Playback previously-captured responses to a client application, even if the server is offline.
+* Debug web traffic from most PCs and devices, including macOS/Linux systems and mobile devices.
+* Chain to upstream proxy servers, including the Tor network.
 * Run as a reverse proxy on a server to capture traffic without reconfiguring the client computer or device.
 * Grow more powerful with new features added by FiddlerScript or the .NET-based extensibility model.
 
@@ -60,8 +60,8 @@ While Fiddler is a very flexible tool, there are some things it cannot presently
 	* Fiddler works with HTTP, HTTPS, and FTP traffic and related protocols like HTML5 WebSockets and ICY streams.
 	* Fiddler cannot "see" or alter traffic that runs on other protocols like SMTP, POP3, Telnet, IRC, etc.
 	* Handle huge requests or responses.
-* Fiddler cannot handle requests larger than 2 gigabytes in size.
-	* Fiddler has limited ability to handle responses larger than 2gb.
+* Fiddler cannot handle requests larger than 2 GB in size.
+	* Fiddler has limited ability to handle responses larger than 2 GB.
 	* Fiddler uses system memory and the pagefile to hold session data. Storing large numbers of sessions or huge requests or responses can result in slow performance.
 * "Magically" remove bugs in a website for you.
 	* While Fiddler will identify networking problems on your behalf, it generally cannot fix them without your help. I can't tell you how many times I've gotten emails asking: "What gives? I installed Fiddler but my website still has bugs!"
