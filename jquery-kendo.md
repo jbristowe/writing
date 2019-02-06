@@ -12,8 +12,8 @@ Kendo UI is UI component library for jQuery, Angular, React, and Vue. These comp
 
 2018 was a significant year for Kendo UI. In that year, 3 major releases were shipped along with 3 service packs. These releases resolved hundreds of issues and added many new features. Some of these new features included the following:
 
-* new components like the **DropDownTree**, **MultiColumnComboBox**, and **ArcGauge**
-* new chatbot framework-agnostic UI components known as **Conversational UI**
+* new components like the [DropDownTree](https://demos.telerik.com/kendo-ui/dropdowntree/index), [MultiColumnComboBox](https://demos.telerik.com/kendo-ui/multicolumncombobox/index), and [ArcGauge](https://demos.telerik.com/kendo-ui/arc-gauge/index)
+* new chatbot framework-agnostic UI components known as [Conversational UI](https://www.telerik.com/conversational-ui)
 * native implementations for React and Vue
 
 Looking ahead to what's coming in 2019, Kendo UI will continue to evolve to support developers building the next generation of web apps. This includes adding new components as well as making numerous improvements to the components that already exist. More information about the [Kendo UI Roadmap](https://www.telerik.com/support/whats-new/kendo-ui/roadmap) is available online. Additionally, customers can submit suggestions on the future direction of the product through the [Feedback Portal for Kendo UI](https://feedback.telerik.com/kendo-jquery-ui).
