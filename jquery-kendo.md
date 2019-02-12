@@ -17,4 +17,9 @@ Looking ahead, jQuery will continue to be a popular choice for building web appl
 * new chatbot framework-agnostic UI components known as [Conversational UI](https://www.telerik.com/conversational-ui)
 * native implementations for React and Vue
 
-Looking ahead to what's coming in 2019, Kendo UI will continue to evolve to support developers building the next generation of web apps. This includes adding new components as well as making numerous improvements to the components that already exist. More information about the [Kendo UI Roadmap](https://www.telerik.com/support/whats-new/kendo-ui/roadmap) is available online. Additionally, customers can submit suggestions on the future direction of the product through the [Feedback Portal for Kendo UI](https://feedback.telerik.com/kendo-jquery-ui).
+Looking ahead to what's coming in 2019, Kendo UI will continue to evolve to support developers building the next generation of web apps. This includes adding new components as well as making numerous improvements to the components that already exist. This commitment also pertains to the underlying libraries and frameworks that Kendo UI supports (i.e. jQuery).
+
+> With the UI components from Kendo UI, we are as fully committed as we have ever been. Since this is a library that has a large active user base our focus will be to ensure that these UI widgets are as robust as possible and ensure that each release is the most stable yet. On top of this we will continue to tackle highly-voted and requested items from our feedback portal and innovate where possible to deliver UI components based on modern UX trends that our users will want to take advantage of.
+-- Carl Bergenhem, Product Manager for Kendo UI
+
+More information about the [Kendo UI Roadmap](https://www.telerik.com/support/whats-new/kendo-ui/roadmap) is available online. Additionally, customers can submit suggestions on the future direction of the product through the [Feedback Portal for Kendo UI](https://feedback.telerik.com/kendo-jquery-ui).
