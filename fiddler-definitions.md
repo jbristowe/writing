@@ -2,9 +2,9 @@
 
 The [section 2.3 of the HTTP specification](https://httpwg.org/specs/rfc7230.html#intermediaries) defines a proxy as:
 
-> a message-forwarding agent that is selected by the client, usually via local configuration rules, to receive requests for some type(s) of absolute URI and attempt to satisfy those requests via translation through the HTTP interface
+> a message-forwarding agent that is **selected by the client**, usually via local configuration rules, to receive requests for some type(s) of absolute URI and attempt to satisfy those requests via translation through the HTTP interface
 
-A proxy participates in transporting messages between a "user agent" (i.e. browser) and an "origin server" (i.e. google.com). From an architectural perspective, the transmitting client is configured to send its messages through a predefined node in a network topology:
+The phrase, "selected by the client" (above) is a distinguishing characteristic; a proxy is specialised node in a network topology because it is designated by a "user agent" (UA) to convey messages as part of a communication chain. (Browsers like Chrome and Firefox common examples of UAs.) A proxy participates in transporting messages between a UA and an "origin server" (i.e. google.com).
 
 ![](https://i.imgur.com/ii1HgSSl.png)
 
