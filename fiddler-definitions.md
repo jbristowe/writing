@@ -14,6 +14,6 @@ Many developers use Fiddler in this manner; to record web traffic that's generat
 
 ![](https://i.imgur.com/O2AkO1jl.png)
 
-This is a useful strategy during development for mocking API responses from a service that may not yet be available for testing. The AutoResponder may also be configured with a latency setting to simulate a more realistic response time.
+This can be a useful development strategy when resources and/or services may be unavailable. For example, Fiddler may be used to mock API responses from a service. The AutoResponder may also be configured with a latency setting to simulate a more realistic response time.
 
 The HTTP specification enables intermediaries to transform messages and their payloads. Fiddler is capable of transforming messages through custom rules.
