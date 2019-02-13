@@ -4,7 +4,7 @@ The [section 2.3 of the HTTP specification](https://httpwg.org/specs/rfc7230.htm
 
 > a message-forwarding agent that is selected by the client, usually via local configuration rules, to receive requests for some type(s) of absolute URI and attempt to satisfy those requests via translation through the HTTP interface. Some translations are minimal, such as for proxy requests for "http" URIs, whereas other requests might require translation to and from entirely different application-level protocols. Proxies are often used to group an organization's HTTP requests through a common intermediary for the sake of security, annotation services, or shared caching.
 
-Here's what the chain of communication between a user agent and an origin server might look like:
+Given this definition, here's what the architecture could look like between a user agent and an origin server:
 
 ![](https://i.imgur.com/ii1HgSSl.png)
 
