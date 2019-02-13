@@ -6,7 +6,11 @@ Enter [Telerik Fiddler](https://www.telerik.com/fiddler).
 
 ## What is Telerik Fiddler?
 
-Telerik Fiddler (or Fiddler) is a special-purpose proxy server for debugging web traffic from applications like browsers. It captures this web traffic, records it through a UI, and then forwards it onto a web server. The server's responses are then returned to Fiddler, which passes the traffic back to the client.
+Telerik Fiddler (or Fiddler) is a special-purpose proxy server for debugging web traffic from applications like browsers. It's used to capture and record this web traffic and then forward it onto a web server. The server's responses are then returned to Fiddler and then returned back to the client.
+
+![](https://i.imgur.com/D6JqD1f.png)
+
+The recorded web traffic is presented a session list of the Fiddler UI:
 
 ![](https://i.imgur.com/SF40wep.png)
 
