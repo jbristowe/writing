@@ -2,11 +2,13 @@
 
 The [section 2.3 of the HTTP specification](https://httpwg.org/specs/rfc7230.html#intermediaries) defines a proxy as:
 
-> a message-forwarding agent that is selected by the client, usually via local configuration rules, to receive requests for some type(s) of absolute URI and attempt to satisfy those requests via translation through the HTTP interface. Some translations are minimal, such as for proxy requests for "http" URIs, whereas other requests might require translation to and from entirely different application-level protocols. Proxies are often used to group an organization's HTTP requests through a common intermediary for the sake of security, annotation services, or shared caching.
+> a message-forwarding agent that is selected by the client, usually via local configuration rules, to receive requests for some type(s) of absolute URI and attempt to satisfy those requests via translation through the HTTP interface
 
-Given this definition, here's what the architecture could look like between a user agent and an origin server:
+A proxy is a part of a "chain of communication" that is responsible for transporting messages between a user agent (i.e. browser) and an origin server (i.e. google.com). Here's what the architecture could look like:
 
 ![](https://i.imgur.com/ii1HgSSl.png)
+
+In the reverse, a proxy acts as a gateway; it "acts as an origin server for the outbound connection but translates received requests and forwards them inbound".
 
 ## Telerik Fiddler as a Proxy
 
