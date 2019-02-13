@@ -1,8 +1,8 @@
 ## What is a Proxy?
 
-The [section 2.3 of the HTTP specification](https://httpwg.org/specs/rfc7230.html#intermediaries) defines a proxy as follows:
+The [section 2.3 of the HTTP specification](https://httpwg.org/specs/rfc7230.html#intermediaries) defines a proxy as:
 
-> A "proxy" is a message-forwarding agent that is selected by the client, usually via local configuration rules, to receive requests for some type(s) of absolute URI and attempt to satisfy those requests via translation through the HTTP interface. Some translations are minimal, such as for proxy requests for "http" URIs, whereas other requests might require translation to and from entirely different application-level protocols. Proxies are often used to group an organization's HTTP requests through a common intermediary for the sake of security, annotation services, or shared caching.
+> a message-forwarding agent that is selected by the client, usually via local configuration rules, to receive requests for some type(s) of absolute URI and attempt to satisfy those requests via translation through the HTTP interface. Some translations are minimal, such as for proxy requests for "http" URIs, whereas other requests might require translation to and from entirely different application-level protocols. Proxies are often used to group an organization's HTTP requests through a common intermediary for the sake of security, annotation services, or shared caching.
 
 Here's what the chain of communication between a user agent and an origin server might look like:
 
