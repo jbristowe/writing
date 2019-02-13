@@ -6,7 +6,7 @@ Most of the time, Fiddler is used in this manner in order to record, inspect, an
 
 As a proxy, Fiddler may process the messages it receives. The HTTP specification enables intermediaries to operate in this manner. The act of processing web traffic can include responding to inbound messages; Fiddler can be configured to respond to messages that match a set of criteria. For example, Fiddler's [AutoResponder](https://docs.telerik.com/fiddler/KnowledgeBase/AutoResponder) may be configured to serve local files (acting as a cache) or perform actions for messages it receives:
 
-![](https://i.imgur.com/JMdwqaA.png)
+![](https://i.imgur.com/JMdwqaAl.png)
 
 This is a useful strategy during development for mocking API responses from a service that may not yet be available for testing. The AutoResponder may also be configured to simulate latency.
 
