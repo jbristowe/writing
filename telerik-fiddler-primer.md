@@ -10,7 +10,7 @@ Telerik Fiddler (or Fiddler) is a special-purpose proxy server for debugging web
 
 ![](https://i.imgur.com/D6JqD1f.png)
 
-The recorded web traffic is presented a session list of the Fiddler UI:
+The recorded web traffic is presented through a session list in the Fiddler UI:
 
 ![](https://i.imgur.com/SF40wep.png)
 
