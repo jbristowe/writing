@@ -22,4 +22,22 @@ Many web developers will use Fiddler in this manner; to record web traffic that'
 
 Incidentally, the AutoResponder supports a clever development scenario when resources and/or services may be unavailable. It may be used to mock API responses from a service. The AutoResponder may also be configured with a latency setting to simulate a more realistic response time.
 
-The HTTP specification enables intermediaries to transform messages and their payloads (see [section 5.7.2](https://httpwg.org/specs/rfc7230.html#message.transformations)). Fiddler is capable of transforming messages through custom rules.
+## Telerik Fiddler as a Reverse Proxy
+
+To use this method with Fiddler, the hostname for requests to reroute must be **127.0.0.1:8888**, **localhost:8888**, **[::1]:8888**, or the machine's NETBIOS hostname on port **8888**.
+
+The HTTP specification enables intermediaries to transform messages and their payloads (see [section 5.7.2](https://httpwg.org/specs/rfc7230.html#message.transformations)). Fiddler is capable of transforming messages through custom rules with FiddlerScript. FiddlerScript is one of the most powerful features in Fiddler; it can be used to enhance Fiddler's UI, add new features, and modify messages.
+
+![](https://i.imgur.com/sZODz3T.png)
+
+Two events are available that can be used to modify messages in transit: `OnBeforeRequest` and `OnBeforeResponse`. `OnBeforeRequest` is called before each request and `OnBeforeResponse` is called before each response.
+
+```
+static function OnBeforeRequest(oSession: Session) {
+  // ...
+}
+
+static function OnBeforeResponse(oSession: Session) {
+  // ...
+}
+```
