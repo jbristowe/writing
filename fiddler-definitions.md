@@ -12,7 +12,7 @@ In the reverse, a proxy is defined as a "reverse proxy" or "gateway". In other w
 
 ## Telerik Fiddler as a Proxy
 
-[Telerik Fiddler](https://www.telerik.com/fiddler) (or Fiddler) is a proxy that acts as an [intermediary](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html#intermediaries) between the UA (i.e. Google Chrome) and the network. Requests intercepted by Fiddler are recorded and then forwarded onto the next intermediary or origin server:
+[Telerik Fiddler](https://www.telerik.com/fiddler) (or Fiddler) is a proxy that acts as an [intermediary](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html#intermediaries) between the UA (i.e. Google Chrome) and the network. Nearly all programs that use web protocols support integration with a proxy. As a result, Fiddler can be used with most applications without need for further configuration. When Fiddler starts to capture traffic, it registers itself with the [Windows Internet (WinINet)](https://docs.microsoft.com/windows/desktop/wininet/about-wininet) networking component and requests that all applications begin directing their requests to Fiddler.
 
 ![](https://i.imgur.com/D6JqD1fl.png)
 
