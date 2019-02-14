@@ -4,7 +4,7 @@ The [section 2.3 of the HTTP specification](https://httpwg.org/specs/rfc7230.htm
 
 > a message-forwarding agent that is **selected by the client**, usually via local configuration rules, to receive requests for some type(s) of absolute URI and attempt to satisfy those requests via translation through the HTTP interface
 
-The phrase, "selected by the client" (above) is a distinguishing characteristic; a proxy is specialised node in a network topology because it is designated by a "user agent" (UA) to convey messages as part of a communication chain. (Browsers like Chrome and Firefox common examples of UAs.) A proxy participates in transporting messages between a UA and an "origin server" (i.e. google.com).
+The phrase, "selected by the client" (above) is a distinguishing characteristic; a proxy is specialised node in a network topology because it is designated by a "user agent" (UA) to convey messages as part of a communication chain. A proxy participates in transporting messages between a UA and an "origin server" (i.e. google.com).
 
 ![](https://i.imgur.com/ii1HgSSl.png)
 
@@ -12,7 +12,7 @@ In the reverse, a proxy is defined as a "reverse proxy" or "gateway". In other w
 
 ## Telerik Fiddler as a Proxy
 
-[Telerik Fiddler](https://www.telerik.com/fiddler) (or Fiddler) is a proxy that acts as an [intermediary](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html#intermediaries) between the user agent (i.e. browser) and the network. Requests intercepted by Fiddler are recorded and then forwarded onto the next intermediary or origin server:
+[Telerik Fiddler](https://www.telerik.com/fiddler) (or Fiddler) is a proxy that acts as an [intermediary](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html#intermediaries) between the UA (i.e. Google Chrome) and the network. Requests intercepted by Fiddler are recorded and then forwarded onto the next intermediary or origin server:
 
 ![](https://i.imgur.com/D6JqD1fl.png)
 
