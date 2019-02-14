@@ -4,7 +4,7 @@ The [section 2.3 of the HTTP specification](https://httpwg.org/specs/rfc7230.htm
 
 > a message-forwarding agent that is selected by the client, usually via local configuration rules, to receive requests for some type(s) of absolute URI and attempt to satisfy those requests via translation through the HTTP interface
 
-The phrase, "selected by the client" in the description (above) is a key characteristic; a proxy is designated by a "user agent" (UA) to convey messages to "origin server" (i.e. google.com). It's also specialised because it may perform actions on messages that are received. (More on this later.)
+The phrase, "selected by the client" in the description (above) is a key characteristic; a proxy is designated by a [user agent](https://en.wikipedia.org/wiki/User_agent) (UA) to convey messages to "origin server" (i.e. google.com). It's also specialised because it may perform actions on messages that are received. (More on this later.)
 
 ![](https://i.imgur.com/ii1HgSSl.png)
 
