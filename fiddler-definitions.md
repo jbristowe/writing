@@ -10,9 +10,13 @@ The phrase, "selected by the client" in the description (above) is a key charact
 
 ![](https://i.imgur.com/ii1HgSSl.png)
 
-It should be noted that each intermediary could route messages internally through a series of nodes.
+Consider this classic (and very funny) scene from the American sitcom, [I Love Lucy](https://www.imdb.com/title/tt0043208/):
 
-In the reverse, a proxy is defined as a "reverse proxy" or "gateway". In other words, an origin server for outbound messages; it translates requests and forwards them inbound.
+![https://www.youtube.com/watch?v=NkQ58I53mjk](https://img.youtube.com/vi/NkQ58I53mjk/0.jpg)
+
+In this scene, when a chocolate travels down the conveyor belt, it's observed, picked up, wrapped, and then placed back. This is a good way of thinking how a proxy works. Here, the assembly worker represents a proxy, a chocolate represents a message, and the conveyor belt represents the network. It's a brilliant scene because it also personifies the concepts of network latency and reliably.
+
+This scene doesn't represent a network in all its aspects. For example, the chocolates could travel in the opposite direction; the assembly worker would modify and forward the chocolates in the same manner. When this occurs with a network, the proxy is defined as a "reverse proxy" or "gateway". In other words, an origin server for outbound messages; it translates requests and forwards them inbound.
 
 ## Telerik Fiddler as a Proxy
 
