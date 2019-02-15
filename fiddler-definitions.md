@@ -8,6 +8,8 @@ The phrase, "selected by the client" in the description (above) is a key charact
 
 ![](https://i.imgur.com/ii1HgSSl.png)
 
+It should be noted that each intermediary could route messages internally through a series of nodes.
+
 In the reverse, a proxy is defined as a "reverse proxy" or "gateway". In other words, an origin server for outbound messages; it translates requests and forwards them inbound.
 
 ## Telerik Fiddler as a Proxy
