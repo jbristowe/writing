@@ -16,7 +16,7 @@ Consider this classic (and very funny) scene from the American sitcom, [I Love L
 
 In this scene, when a chocolate travels down the conveyor belt, it's observed, picked up, wrapped, and then placed back. This is a good way of thinking how a proxy works. Here, the assembly worker represents a proxy, a chocolate represents a message, and the conveyor belt represents the network. It's a brilliant scene because the concepts of network latency and reliably are also personified.
 
-This scene doesn't represent a network in all its aspects. For example, chocolates could simultaneously travel in the opposite direction. In that scenario, the assembly worker would modify and forward the chocolates in the same manner as before. When this occurs with a network, a proxy is defined as a "reverse proxy" or "gateway". In other words, an origin server for outbound messages; it translates requests and forwards them inbound.
+This scene doesn't represent a network in all its aspects. For example, it only represents outbound traffic. Let's not forget that HTTP is a request-response protocol. What about inbound traffic? For this, we would have to imagine chocolates simultaneously travelling in the opposite direction. The assembly worker would modify and forward the chocolates in the same manner as before. When this occurs with a network, a proxy is defined as a "reverse proxy" or "gateway". In other words, an origin server for outbound messages; it translates requests and forwards them inbound.
 
 ## Telerik Fiddler as a Proxy
 
