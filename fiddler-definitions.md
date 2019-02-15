@@ -40,4 +40,4 @@ static function OnBeforeResponse(oSession: Session) {
 
 ## Telerik Fiddler as a Reverse Proxy
 
-To use this method with Fiddler, the hostname for requests to reroute must be **127.0.0.1:8888**, **localhost:8888**, **[::1]:8888**, or the machine's NETBIOS hostname on port **8888**.
+It can be useful to have Fiddler operate as a reverse proxy; an origin server for outbound messages that translates requests and forwards them inbound. To use this method with Fiddler, the hostname for requests to reroute must be **127.0.0.1:8888**, **localhost:8888**, **[::1]:8888**, or the machine's NETBIOS hostname on port **8888**.
