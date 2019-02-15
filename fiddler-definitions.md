@@ -1,6 +1,6 @@
 ## What is a Proxy?
 
-If you had asked me this question back in the early 1990s, I would have likely replied, "It's that thing that kills your Internet connection, right?" I wasn't entirely wrong. If I had a proxy configured on my machine then I'd often see broken images on webpages. Obviously, things have improved since then. However, the question remains a good one to ask, especially for developers.
+If you had asked me this question back in the early 1990s, I would have likely replied, "It's that thing that kills your Internet connection, right?" I wasn't entirely wrong. Back in the day, if I had a proxy configured on my machine then I'd often see broken images on webpages. Obviously, things have improved since then. However, the question remains a good one to ask, especially for developers writing applications that will support them.
 
 The [section 2.3 of the HTTP specification](https://httpwg.org/specs/rfc7230.html#intermediaries) defines a proxy as:
 
