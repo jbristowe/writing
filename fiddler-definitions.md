@@ -34,7 +34,7 @@ Many web developers will use Fiddler in this manner; to record web traffic that'
 
 The AutoResponder supports a useful development scenario when resources and/or services may be unavailable. It may be used to mock API responses from a service. The AutoResponder may also be configured with a latency setting to simulate a more realistic response time.
 
-The HTTP specification enables intermediaries to transform messages and their payloads (see [section 5.7.2](https://httpwg.org/specs/rfc7230.html#message.transformations)). Fiddler is capable of transforming messages through custom rules with FiddlerScript. FiddlerScript is one of the most powerful features in Fiddler; it can be used to enhance Fiddler's UI, add new features, and modify messages.
+The HTTP specification enables proxies to transform messages and their payloads (see [section 5.7.2](https://httpwg.org/specs/rfc7230.html#message.transformations)). Fiddler is capable of transforming messages through custom rules with FiddlerScript. FiddlerScript is one of the most powerful features in Fiddler; it can be used to enhance Fiddler's UI, add new features, and modify messages.
 
 ![](https://i.imgur.com/sZODz3T.png)
 
@@ -49,6 +49,7 @@ static function OnBeforeResponse(oSession: Session) {
   // ...
 }
 ```
+
 
 ## Telerik Fiddler as a Reverse Proxy
 
