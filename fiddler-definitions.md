@@ -42,16 +42,6 @@ The transformation of messages is made possible through custom rules written in 
 
 Two events are available that can be used to modify messages in transit: `OnBeforeRequest` and `OnBeforeResponse`. `OnBeforeRequest` is called before each request and `OnBeforeResponse` is called before each response.
 
-```
-static function OnBeforeRequest(oSession: Session) {
-  // ...
-}
-
-static function OnBeforeResponse(oSession: Session) {
-  // ...
-}
-```
-
 Eric Lawrence has written a great article entitled, [Understanding FiddlerScript](https://www.telerik.com/blogs/understanding-fiddlerscript) where he describes its available functions. He's also published a list of FiddlerScript "recipes": [Fiddler Web Debugger - Script Samples](https://www.fiddlerbook.com/fiddler/dev/scriptsamples.asp).
 
 ## Telerik Fiddler as a Reverse Proxy
