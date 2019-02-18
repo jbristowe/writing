@@ -52,7 +52,7 @@ static function OnBeforeResponse(oSession: Session) {
 }
 ```
 
-Eric Lawrence has a great article entitled, [Understanding FiddlerScript](https://www.telerik.com/blogs/understanding-fiddlerscript) where he describes its feature set. He's also published a list of "recipes" in FiddlerScript: [Fiddler Web Debugger - Script Samples](https://www.fiddlerbook.com/fiddler/dev/scriptsamples.asp).
+Eric Lawrence has written a great article entitled, [Understanding FiddlerScript](https://www.telerik.com/blogs/understanding-fiddlerscript) where he describes its available functions. He's also published a list of FiddlerScript "recipes": [Fiddler Web Debugger - Script Samples](https://www.fiddlerbook.com/fiddler/dev/scriptsamples.asp).
 
 ## Telerik Fiddler as a Reverse Proxy
 
