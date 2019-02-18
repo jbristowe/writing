@@ -12,7 +12,7 @@ The phrase, "selected by the client" in the description (above) is a key charact
 
 Consider this classic (and very funny) scene from the American sitcom, [I Love Lucy](https://www.imdb.com/title/tt0043208/):
 
-![https://www.youtube.com/watch?v=NkQ58I53mjk](https://img.youtube.com/vi/NkQ58I53mjk/0.jpg)
+[![I Love Lucy](http://img.youtube.com/vi/NkQ58I53mjk/0.jpg)](https://www.youtube.com/watch?v=NkQ58I53mjk "I Love Lucy")
 
 In this scene, when a chocolate travels down the conveyor belt, it's observed, picked up, wrapped, and then placed back. This is a good way of thinking how a proxy works. Here, the assembly workers (Lucy and Ethel) represents proxies, a chocolate represents a message, and the conveyor belt represents the network. It's a brilliant scene because the concepts of network latency and reliably are also personified.
 
