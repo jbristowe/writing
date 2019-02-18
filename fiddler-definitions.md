@@ -34,7 +34,9 @@ Many web developers will use Fiddler in this manner; to record web traffic that'
 
 The AutoResponder supports a useful development scenario when resources and/or services may be unavailable. It may be used to mock API responses from a service. The AutoResponder may also be configured with a latency setting to simulate a more realistic response time.
 
-The HTTP specification enables proxies to transform messages and their payloads (see [section 5.7.2](https://httpwg.org/specs/rfc7230.html#message.transformations)). Fiddler is capable of transforming messages through custom rules with FiddlerScript. FiddlerScript is one of the most powerful features in Fiddler; it can be used to enhance Fiddler's UI, add new features, and modify messages.
+The HTTP specification enables proxies to transform messages and their payloads (see [section 5.7.2](https://httpwg.org/specs/rfc7230.html#message.transformations)). In the example I cited (above), this is represented by Lucy and Ethel wrapping the individual chocolates as they travel along the conveyor belt. Fiddler is capable of transforming messages as they are intercepted. For example, I can add/remove HTTP headers and modify message payloads.
+
+The transformation of messages is made possible through custom rules written in FiddlerScript. FiddlerScript is one of the most powerful features in Fiddler; it can be used to enhance Fiddler's UI, add new features, and modify messages. It can even change various characteristics of the network or client as messages are transmitted. For example, I can write FiddlerScript to simulate conditions of the browser (i.e. no cookies) or reroute traffic.
 
 ![](https://i.imgur.com/sZODz3T.png)
 
@@ -50,6 +52,7 @@ static function OnBeforeResponse(oSession: Session) {
 }
 ```
 
+Eric Lawrence has a great article entitled, [Understanding FiddlerScript] where he describes its feature set. He's also published a list of "recipes" in FiddlerScript: [Fiddler Web Debugger - Script Samples](https://www.fiddlerbook.com/fiddler/dev/scriptsamples.asp).
 
 ## Telerik Fiddler as a Reverse Proxy
 
