@@ -46,4 +46,6 @@ Eric Lawrence has written a great article entitled, [Understanding FiddlerScript
 
 ## Telerik Fiddler as a Reverse Proxy
 
-It can be useful to have Fiddler operate as a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy); a server that can translates requests and forwards them inbound. To use this method with Fiddler, the hostname for requests to reroute must be **127.0.0.1:8888**, **localhost:8888**, **[::1]:8888**, or the machine's NetBIOS hostname on port **8888**. 
+It can be useful to have Fiddler operate as a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy); a server that can translates requests and forwards them inbound. To use this method with Fiddler, the hostname for requests to reroute must be **127.0.0.1:8888**, **localhost:8888**, **[::1]:8888**, or the machine's NetBIOS hostname on port **8888**.
+
+![](https://i.imgur.com/qjG3JvF.png)
