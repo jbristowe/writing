@@ -22,7 +22,7 @@ This scene doesn't represent a network in all its aspects. For example, it only 
 
 [Telerik Fiddler](https://www.telerik.com/fiddler) (or Fiddler) is a web debugging proxy. That means it's acts as an [intermediary](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html#intermediaries) and can troubleshoot the traffic that's sent between a user agent (i.e. Google Chrome) and the network. Nearly all programs that use web protocols support integration with a proxy. As a result, Fiddler can be used with most applications without need for further configuration. When Fiddler starts to capture traffic, it registers itself with the [Windows Internet (WinINet)](https://docs.microsoft.com/windows/desktop/wininet/about-wininet) networking component and requests that all applications begin directing their requests to Fiddler.
 
-![](https://i.imgur.com/SF40wep.png)
+![](https://i.imgur.com/fx6LavP.png)
 
 In the most common scenario where Fiddler is the only proxy that's configured to operate on the network, the architecture becomes a little simplier:
 
