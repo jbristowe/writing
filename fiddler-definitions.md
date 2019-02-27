@@ -1,4 +1,18 @@
-## What is a Proxy?
+# Understanding How Telerik Fiddler Works
+
+Given the ubiquitous nature of the Internet, many applications are built to assume network connectivity. That's because a connection to the web can greatly expand the capabilities of an application through the integration of remote data and services. However, this integration is often error-prone; services can become unavailable and data can take a long time to transfer over slow networks. In fact, many bugs can be attributed to conditions relating to the underlying network. In these situations, it's useful to have a utility that's able to help you debug the problem; a utility to monitor the network traffic  (HTTP or HTTPS) that occurs between your application and the services it relies upon.
+
+Enter [Telerik Fiddler](https://www.telerik.com/fiddler).
+
+## What is Telerik Fiddler?
+
+Telerik Fiddler (or Fiddler) is a special-purpose proxy server for debugging web traffic from applications like browsers. It's used to capture and record this web traffic and then forward it onto a web server. The server's responses are then returned to Fiddler and then returned back to the client. The recorded web traffic is presented through a session list in the Fiddler UI:
+
+![](https://i.imgur.com/SF40wep.png)
+
+Nearly all programs that use web protocols support proxy servers. As a result, Fiddler can be used with most applications without need for further configuration. When Fiddler starts to capture traffic, it registers itself with the [Windows Internet (WinINet)](https://docs.microsoft.com/windows/desktop/wininet/about-wininet) networking component and requests that all applications begin directing their requests to Fiddler.
+
+## "What is a proxy?"
 
 If you had asked me this question back in the early 1990s, I would have likely replied, "It's that thing that kills your Internet connection, right?" Back in the day, if found myself with a proxy configured on my machine then I'd sometimes see broken images on webpages. This would be followed by some cursing and many presses of the <kbd>F5</kbd> key. Obviously, things have improved since then. However, the question remains a good one to ask, especially for developers writing applications that will support them.
 
@@ -46,7 +60,7 @@ Eric Lawrence has written a great article entitled, [Understanding FiddlerScript
 
 ## Telerik Fiddler as a Reverse Proxy
 
-It can be useful to have Fiddler operate as a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy); a server that can translates requests and forwards them inbound. This can be useful in a situation where you may wish to capture traffic with Fiddler, but you are unable to configure the client to use a proxy server.
+Incidentally, it can be useful to have Fiddler operate as a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy); a server that can translates requests and forwards them inbound. This can be useful in a situation where you may wish to capture traffic with Fiddler, but you are unable to configure the client to use a proxy server.
 
 The first step in configuring Fiddler to act as a reverse proxy is to enable the option, "Allow remote computers to connect":
 
