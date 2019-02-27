@@ -58,12 +58,10 @@ Two events are available that can be used to modify messages in transit: `OnBefo
 
 Eric Lawrence has written a great article entitled, [Understanding FiddlerScript](https://www.telerik.com/blogs/understanding-fiddlerscript) where he describes its available functions. He's also published a list of FiddlerScript "recipes": [Fiddler Web Debugger - Script Samples](https://www.fiddlerbook.com/fiddler/dev/scriptsamples.asp).
 
-## Telerik Fiddler as a Reverse Proxy
+### Telerik Fiddler as a Reverse Proxy
 
-Incidentally, it can be useful to have Fiddler operate as a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy); a server that can translates requests and forwards them inbound. This can be useful in a situation where you may wish to capture traffic with Fiddler, but you are unable to configure the client to use a proxy server.
+Incidentally, it can be useful to have Fiddler operate as a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy); a server that can translates requests and forwards them inbound. This can be useful in a situation where you may wish to capture traffic with Fiddler, but you are unable to configure the client to use a proxy server. Steps to configure Fiddler to operate in this manner are outlined in the documentation: [Use Fiddler as a Reverse Proxy](https://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/UseFiddlerAsReverseProxy).
 
-The first step in configuring Fiddler to act as a reverse proxy is to enable the option, "Allow remote computers to connect":
+## The More You Know
 
-![](https://i.imgur.com/qjG3JvF.png)
-
-Next, you have two (2) options to reroute traffic: by setting a key in the Windows Registry or by writing a FiddlerScript rule. Incidentally, the hostname for incoming requests must be 127.0.0.1:8888, localhost:8888, [::1]:8888, or the machine's NetBIOS hostname on port 8888. Both of these steps are outlined in the documentation for Fiddler: [Use Fiddler as a Reverse Proxy](https://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/UseFiddlerAsReverseProxy).
+Understanding how Fiddler operates as a web debugging proxy will enable you to target scenarios where you're interested in seeing what's transmitted on the network. Once you have Fiddler configured correctly, you'll be able to use its large set of features. To get started, why not download Fiddler and kick the tires for yourself? And if you're interested in seeing the future, check out [Fiddler Everywhere](https://www.telerik.com/fiddler-everywhere), which runs across Windows, macOS, and Linux.
