@@ -1,3 +1,4 @@
+
 # Understanding How Telerik Fiddler Works
 
 Given the ubiquitous nature of the Internet, many applications are built to assume network connectivity. That's because a connection to the web can greatly expand the capabilities of an application through the integration of remote data and services. However, this integration is often error-prone; services can become unavailable and data can take a long time to transfer over slow networks. In fact, many bugs can be attributed to conditions relating to the underlying network. In these situations, it's useful to have a utility that's able to help you debug the problem; a utility to monitor the network traffic  (HTTP or HTTPS) that occurs between your application and the services it relies upon.
